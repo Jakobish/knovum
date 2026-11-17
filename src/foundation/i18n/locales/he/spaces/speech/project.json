@@ -1,0 +1,56 @@
+{
+  "language": "שפה",
+  "script": {
+    "placeholder": "הזינו את התסריט לגרסה הזו",
+    "label": "תסריט"
+  },
+  "unsaved": {
+    "title": "לשמור את השינויים בפרויקט הדיבור?",
+    "description": "שמרו את הגרסה הזו לפני היציאה, או בטלו את השינויים שלא נשמרו."
+  },
+  "incomplete": {
+    "title": "לבטל את העריכות הלא גמורות?",
+    "description": "חזרו כדי לסיים את העריכה, או בטלו את השינויים האלה."
+  },
+  "saving": "שומר",
+  "starting": "מכין את היצירה",
+  "generatingInTasks": "יוצר. התקדמות וביטול נמצאים במשימות.",
+  "format": "פורמט",
+  "sampleRate": "קצב דגימה",
+  "loudness": "עוצמת קול (LUFS)",
+  "truePeak": "שיא אמיתי (dB)",
+  "role": "תפקיד הדובר",
+  "roleBindings": {
+    "label": "קולות התפקידים",
+    "hint": "בחרו קול לכל תפקיד."
+  },
+  "addRole": "הוספת תפקיד",
+  "removeRole": "הסרת תפקיד",
+  "defaultRole": "קריין",
+  "deliveryInstruction": {
+    "label": "הוראת הגשה",
+    "placeholder": "אופציונלי: תארו את הקצב, הטון וההגשה של המקטע הזה (עד 500 תווים)"
+  },
+  "stages": {
+    "preparing": "מכין משאבים",
+    "synthesizing": "מסנתז תצוגה מקדימה",
+    "rendering": "מייצר מקטעים",
+    "done": "הושלם"
+  },
+  "types": {
+    "audiobook": "ספר דיגיטלי",
+    "videoDubbing": "דיבוב וידאו"
+  },
+  "generateFromNode": "יצירת דיבור",
+  "settings": "הגדרות",
+  "editorPages": "מקטעי עורך הדיבור",
+  "importManuscript": "ייבוא כתב היד של הצומת",
+  "sourceNotReady": "הווידאו עדיין לא מוכן לדיבוב.",
+  "emptyManuscript": "ייבאו את כתב היד או הוסיפו פרק כדי להתחיל.",
+  "emptyVideoScript": "ייבאו כתוביות או הוסיפו שורת דיבוב.",
+  "actions": {
+    "audiobook": "יצירת ספר דיגיטלי",
+    "shortDubbing": "יצירת דיבור",
+    "videoDubbing": "יצירת וידאו דיבוב"
+  }
+}

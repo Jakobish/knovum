@@ -1,0 +1,54 @@
+{
+  "itemsSelected": "{count} פריט נבחר | {count} פריטים נבחרו",
+  "title": "פרטים",
+  "basicInformation": "כללי",
+  "showSource": "תצוגת מקור",
+  "fields": {
+    "type": "סוג",
+    "source": "מקור",
+    "size": "גודל",
+    "originalUrl": "כתובת URL מקורית",
+    "provider": "פלטפורמה",
+    "siteName": "אתר",
+    "description": "תיאור",
+    "canonicalUrl": "כתובת URL קנונית",
+    "modified": "תאריך שינוי"
+  },
+  "extractedDocumentText": "טקסט שחולץ",
+  "pdfReader": {
+    "open": "פתיחת PDF",
+    "openAtPage": "פתיחה בעמוד {page}",
+    "position": "עמוד {page} מתוך {total}",
+    "previousPage": "העמוד הקודם",
+    "nextPage": "העמוד הבא",
+    "zoomOut": "התרחקות",
+    "zoomIn": "התקרבות",
+    "fitWidth": "התאמה לרוחב"
+  },
+  "recognizedText": "טקסט שזוהה ב-OCR",
+  "excerpts": {
+    "title": "ציטוט · {title}",
+    "line": "— {title} · {location}",
+    "content": "תוכן הציטוט"
+  },
+  "openSource": "איתור צומת המקור",
+  "targetSpace": "מרחב היעד",
+  "none": "לא הוגדר",
+  "renameHint": "לחצו כדי לשנות את השם",
+  "openContent": "פתיחת התוכן",
+  "content": "תוכן",
+  "playVideo": "ניגון וידאו",
+  "related": {
+    "title": "תוכן קשור",
+    "show": "הצגת עוד",
+    "showLess": "הצגת פחות",
+    "unavailable": "תוכן קשור אינו זמין זמנית.",
+    "indexing": "בונה את אינדקס התוכן. תוכן קשור יופיע כשהוא יהיה מוכן.",
+    "notIndexed": "תוכן קשור עדיין לא הוכן לפריט הזה.",
+    "prepare": "הכנה עכשיו",
+    "noContent": "לפריט הזה עדיין אין תוכן ניתן לחיפוש.",
+    "empty": "אין עדיין תוכן קשור במרחב הזה.",
+    "explanation": "גילוי תוכן קשור במרחב הזה לפי משמעות. התוצאות אינן יוצרות קשרים."
+  },
+  "containedItems": "{count} פריטים כלולים"
+}

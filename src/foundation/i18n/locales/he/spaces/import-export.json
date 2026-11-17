@@ -1,0 +1,69 @@
+{
+  "import": {
+    "failed": "הייבוא נכשל. בדקו את פורמט הקובץ ונסו שוב."
+  },
+  "website": {
+    "add": "הוספת אתר",
+    "description": "שמירת כתובת אתר וחילוץ כותרת ותקציר.",
+    "previewUnavailable": "לא ניתן היה לקבל את פרטי האתר. הכתובת נשמרה; נסו שוב מפרטי הפריט.",
+    "refresh": "רענון תוכן האינטרנט",
+    "loading": "שולף מטא-דאטה של האתר…",
+    "refreshFailed": "שליפת תוכן האתר נכשלה"
+  },
+  "preview": {
+    "system": "תצוגה מקדימה",
+    "show": "תצוגה מקדימה",
+    "instantUnavailable": {
+      "title": "אין תצוגה מקדימה מיידית",
+      "description": "תצוגה מקדימה מיידית אינה זמינה; הטקסט שחולץ נשאר ניתן לחיפוש."
+    }
+  },
+  "markdown": {
+    "export": "ייצוא Markdown"
+  },
+  "export": {
+    "defaultFormats": "פורמט ברירת מחדל לכל משאב",
+    "completed": "הייצוא הושלם",
+    "running": "מייצא…",
+    "noFormats": "למשאב הזה אין קובץ לשמור.",
+    "formats": {
+      "png": "תמונת PNG ‏(.png)",
+      "jpg": "תמונת JPEG ‏(.jpg)",
+      "webp": "תמונת WebP ‏(.webp)",
+      "tiff": "תמונת TIFF ‏(.tiff)",
+      "md": "Markdown ‏(.md)",
+      "txt": "טקסט רגיל ‏(.txt)",
+      "json": "JSON ‏(.json)",
+      "html": "מסמך HTML ‏(.html)",
+      "docx": "מסמך Word ‏(.docx)",
+      "pdf": "מסמך PDF ‏(.pdf)",
+      "pptx": "מצגת ‏(.pptx)",
+      "wav": "אודיו WAV ‏(.wav)",
+      "mp3": "אודיו MP3 ‏(.mp3)",
+      "m4a": "אודיו AAC ‏(.m4a)",
+      "flac": "אודיו FLAC ‏(.flac)",
+      "mp4": "וידאו MP4 ‏(.mp4)",
+      "mov": "וידאו QuickTime ‏(.mov)",
+      "mkv": "וידאו Matroska ‏(.mkv)"
+    }
+  },
+  "fileName": "שם הקובץ",
+  "openExternally": "פתיחה ביישום חיצוני",
+  "space": {
+    "export": "ייצוא חבילת מרחב…",
+    "import": "ייבוא חבילת מרחב…",
+    "exported": "חבילת המרחב יוצאה",
+    "imported": "המרחב יובא בהצלחה"
+  },
+  "jsonCanvas": {
+    "import": "ייבוא JSON Canvas…",
+    "export": "ייצוא JSON Canvas…",
+    "exported": "JSON Canvas יוצא"
+  },
+  "progress": {
+    "resource": "מייבא משאב",
+    "preparing": "מעתיק ומאמת משאבים…",
+    "processing": "מנתח משאבים…"
+  },
+  "openInEditor": "פתיחה בעורך חיצוני"
+}

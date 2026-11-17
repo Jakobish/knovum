@@ -1,0 +1,133 @@
+{
+  "crop": {
+    "title": "חיתוך",
+    "original": "המקור",
+    "presets": "פריסטים",
+    "general": "כללי",
+    "square": "ריבוע",
+    "story": "סטורי",
+    "portrait": "פורטרט",
+    "landscape": "נוף",
+    "referenceSize": "גודל ייחוס; הפיקסלים בייצוא תלויים בתמונת המקור",
+    "lockAspect": "נעילת יחס החיתוך"
+  },
+  "removeObject": {
+    "tool": "מחק",
+    "mode": "קלט ההסרה",
+    "modes": {
+      "mask": "ציור מסכה",
+      "prompt": "תיאור"
+    },
+    "undo": "ביטול משיכת הבחירה",
+    "brushSize": "מברשת הבחירה",
+    "prompt": {
+      "label": "תארו מה להסיר",
+      "placeholder": "תארו מה להסיר…"
+    },
+    "generate": "הסרה ויצירה",
+    "submitting": "יוצר את משימת התמונה הנגזרת…",
+    "sizeLimit": "השתמשו במקור עד 16 מגה-פיקסל ועד 16,384 פיקסלים בצלע.",
+    "limitReached": "הגעתם למגבלת הבחירה. צרו את התמונה או בטלו משיכה."
+  },
+  "adjust": {
+    "title": "כוונון",
+    "sections": "מקטעי כוונון התמונה"
+  },
+  "adjustGroups": {
+    "light": "אור",
+    "color": "צבע",
+    "texture": "טקסטורה",
+    "effects": "אפקטים"
+  },
+  "upscale": {
+    "action": "הגדלת רזולוציה",
+    "targetTooSmall": "הגודל הזה אינו גדול מהתמונה הנוכחית",
+    "sourceBudget": "התמונה שעובדה חורגת מתקציב הקלט של המודל שנבחר."
+  },
+  "angle": {
+    "title": "זווית חדשה",
+    "mode": "יעד הכוונון",
+    "modes": {
+      "subject": "הנושא",
+      "camera": "המצלמה"
+    },
+    "preview": "גררו כדי לכוונן את המבט; החזיקו Shift לדיוק, או גלגלו כדי לשנות את המסגור",
+    "yaw": "סיבוב",
+    "pitch": "הטיה",
+    "zoom": "זום",
+    "zoomLevels": {
+      "wide": "זווית רחבה",
+      "medium": "בינונית",
+      "close": "תקריב"
+    },
+    "tiltUp": "הטיה למעלה",
+    "tiltDown": "הטיה למטה",
+    "turnLeft": "פנייה שמאלה",
+    "turnRight": "פנייה ימינה"
+  },
+  "applyNow": "שימוש עכשיו",
+  "unsaved": {
+    "title": "להחיל את שינויי התמונה?",
+    "description": "החילו את עריכת התמונה הזו לפני היציאה, או בטלו את הטיוטה."
+  },
+  "errors": {
+    "modelUnavailable": "בדקו את הגדרות מודל התמונות ופרטי האישור",
+    "providerUnsupported": "מודל התמונות שנבחר אינו תומך בפעולה הזו",
+    "credentialUnavailable": "לא ניתן היה לקרוא את פרטי האישור של מודל התמונות",
+    "capabilityCheckFailed": "לא ניתן היה לבדוק אם הפעולה הזו זמינה",
+    "busy": "פעולה נמצאת בתהליך"
+  },
+  "openAiSettings": "פתיחת הגדרות הבינה המלאכותית",
+  "status": {
+    "capabilityChecking": "בודק יכולות תמונה…",
+    "imagePreparing": "התמונה עדיין בהכנה"
+  },
+  "operation": {
+    "execution": "מודל הביצוע"
+  },
+  "finishImageEdit": "קודם החילו או בטלו את עריכת התמונה הנוכחית",
+  "adjustments": {
+    "exposure": "חשיפה",
+    "contrast": "ניגודיות",
+    "highlights": "הדגשות",
+    "shadows": "צללים",
+    "whites": "לבנים",
+    "blacks": "שחורים",
+    "saturation": "רוויה",
+    "warmth": "חמימות",
+    "sharpness": "חדות",
+    "vignette": "וִיגְנֵטָה",
+    "vibrance": "חיות",
+    "tint": "גוון",
+    "clarity": "בהירות",
+    "grain": "גרעון",
+    "softLight": "אור רך",
+    "glow": "זוהר"
+  },
+  "selection": {
+    "title": "חיתוך אובייקט",
+    "tools": "כלי בחירה",
+    "include": "נקודת חזית",
+    "exclude": "נקודת אי-הוצאה",
+    "box": "ציור תיבה",
+    "brush": "עידון במברשת",
+    "processing": "מעדכן את הבחירה…",
+    "help": "לחצו על הנושא; הוסיפו נקודות אי-הוצאה או תיבה. חזקו פרטים במברשת. עד שש נקודות הנחיה.",
+    "repair": "הסרה ומילוי",
+    "extract": "חיתוך",
+    "undo": "ביטול הבחירה",
+    "modelUnavailable": "בחרו מודל בחירת אובייקטים זמין בהגדרות.",
+    "promptLimit": "עד שש הנחיות. בטלו הנחיה כדי להמשיך."
+  },
+  "depth": {
+    "action": "יצירת עומק יחסי"
+  },
+  "results": {
+    "upscale": "הוגדל",
+    "multiAngle": "זווית חדשה",
+    "removeObject": "תוקן",
+    "removeBackground": "גזירה",
+    "extractSelection": "האובייקט שנבחר",
+    "generateDepth": "עומק יחסי"
+  }
+}

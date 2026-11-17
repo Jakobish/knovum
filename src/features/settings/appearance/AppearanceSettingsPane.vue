@@ -56,6 +56,7 @@ const languages = computed<readonly SelectOption<LocalePreference>[]>(() => [
   { value: "pt-BR", label: t("settings.appearance.options.language.brazilianPortuguese") },
   { value: "it", label: t("settings.appearance.options.language.italian") },
   { value: "ru", label: t("settings.appearance.options.language.russian") },
+  { value: "he", label: t("settings.appearance.options.language.hebrew") },
 ]);
 </script>
 

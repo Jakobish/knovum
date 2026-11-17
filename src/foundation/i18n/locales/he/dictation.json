@@ -1,0 +1,25 @@
+{
+  "recording": "מקליט… שחררו את קיצור הדרך כדי לתמלל",
+  "transcribing": "מתמלל את התכתיב…",
+  "errors": {
+    "microphonePermissionDenied": "הגישה למיקרופון נדחתה. אפשרו גישה למיקרופון עבור Knovum בהגדרות המערכת.",
+    "microphoneUnavailable": "המיקרופון אינו זמין. בדקו את התקן הקלט שנבחר ונסו שוב.",
+    "recordingLimitReached": "ההקלטה הגיעה למגבלה של שתי דקות ובוטלה.",
+    "audioCaptureEmpty": "המיקרופון לא קלט אודיו.",
+    "unsupportedAudioFormat": "פורמט המיקרופון שנבחר אינו נתמך לתכתיב.",
+    "unsupportedDevice": "למכשיר הזה אין פרופיל תכתיב שולחני מתאים.",
+    "dictationFocusChanged": "יישום היעד השתנה, ולכן לא הוכנס טקסט.",
+    "dictationPermissionDenied": "מערכת ההפעלה חסמה את הכנסת הטקסט. הטקסט שזוהה נשמר למטה.",
+    "dictationEmptyResult": "לא זוהה טקסט שניתן להכניס.",
+    "dictationInsertionFailed": "הכנסת הטקסט נכשלה. הטקסט שזוהה נשמר למטה.",
+    "dictationFailed": "לא ניתן היה להשלים את התכתיב."
+  },
+  "result": {
+    "title": "תוצאת התכתיב",
+    "description": "ההכנסה האוטומטית לא הושלמה. הטקסט שזוהה נשמר כאן.",
+    "noText": "לא זוהה טקסט.",
+    "copy": "העתקת הטקסט",
+    "copied": "התכתיב הועתק"
+  },
+  "preparingResources": "מכין משאבים מקומיים לתכתיב…"
+}

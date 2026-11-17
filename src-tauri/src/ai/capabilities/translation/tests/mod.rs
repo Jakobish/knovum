@@ -7,7 +7,7 @@ use super::{
 #[test]
 fn supports_explicit_translation_targets() {
     let supported = [
-        "zh-CN", "zh-TW", "en", "ja", "ko", "fr", "de", "es", "pt", "it", "ru", "ar",
+        "zh-CN", "zh-TW", "en", "ja", "ko", "fr", "de", "es", "pt", "it", "ru", "ar", "he",
     ];
     for target in supported {
         assert!(language_name(target).is_ok(), "target {target}");
@@ -42,7 +42,7 @@ fn dubbing_input_embeds_term_preservation() {
 #[test]
 fn speech_rate_table_covers_every_translation_target() {
     for target in [
-        "zh-CN", "zh-TW", "en", "en-US", "ja", "ko", "fr", "de", "es", "pt-BR", "it", "ru", "ar",
+        "zh-CN", "zh-TW", "en", "en-US", "ja", "ko", "fr", "de", "es", "pt-BR", "it", "ru", "ar", "he",
     ] {
         assert!(syllables_per_second(target).is_some(), "target {target}");
     }
@@ -61,6 +61,7 @@ fn duration_estimates_follow_script_conventions() {
     assert_eq!(estimate_duration_ms("yellow", "en"), Some(333)); // 2 / 6.0
     assert_eq!(estimate_duration_ms("привет", "ru"), Some(290)); // 2 / 6.9
     assert_eq!(estimate_duration_ms("سلام", "ar"), Some(167)); // 1 / 6.0
+    assert_eq!(estimate_duration_ms("שלום", "he"), Some(167)); // 1 / 6.0
                                                               // Written digits each cost about one syllable when spoken.
     assert_eq!(estimate_duration_ms("3.14", "en"), Some(500)); // 3 / 6.0
     assert_eq!(estimate_duration_ms("", "en"), Some(0));

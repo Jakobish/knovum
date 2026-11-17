@@ -1,0 +1,173 @@
+{
+  "tools": {
+    "title": "כלי קנבס",
+    "select": "בחירה",
+    "section": "ציור מקטע"
+  },
+  "nodeActions": {
+    "label": "פעולות צומת",
+    "openOriginal": "פתיחת המקור",
+    "goToTarget": "מעבר ליעד",
+    "viewLarge": "הצגת התמונה",
+    "openVideo": "פתיחת הווידאו",
+    "openAudio": "פתיחת האודיו",
+    "viewCode": "צפייה בקוד",
+    "openFile": "פתיחת הקובץ",
+    "export": "ייצוא"
+  },
+  "zoom": {
+    "out": "התרחקות",
+    "in": "התקרבות",
+    "options": "אפשרויות תצוגה",
+    "toFitContent": "התאמה לתוכן",
+    "toSelection": "התאמה לבחירה"
+  },
+  "arrange": {
+    "title": "סידור",
+    "toFront": "הבאה לחזית",
+    "forward": "קדימה",
+    "backward": "אחורה",
+    "toBack": "שליחה לרקע",
+    "autoHorizontal": "פריסה אוטומטית (אופקית)",
+    "autoVertical": "פריסה אוטומטית (אנכית)",
+    "tidy": "סידור נקי"
+  },
+  "layerOrder": "סדר שכבות",
+  "selection": {
+    "label": "בחירה",
+    "selectAll": "בחירת הכול",
+    "delete": "מחיקת הנבחרים",
+    "toggleLock": "נעילה או ביטול נעילה של הבחירה"
+  },
+  "kinds": {
+    "group": "קבוצה",
+    "section": "מקטע"
+  },
+  "groups": {
+    "create": "קיבוץ הבחירה",
+    "ungroup": "ביטול הקיבוץ של הבחירה",
+    "untitled": "קבוצה ללא כותרת"
+  },
+  "sections": {
+    "create": "יצירת מקטע",
+    "createEmpty": "מקטע חדש",
+    "removeOnly": "הסרת המקטע בלבד",
+    "backgroundFailed": "לא ניתן לטעון את תמונת הרקע של המקטע",
+    "drop": { "enter": "שחררו כדי להעביר לתוך המקטע", "leave": "שחררו כדי להוציא מהמקטע" },
+    "fitToContents": "התאמת המקטע לתוכן",
+    "untitled": "מקטע ללא כותרת",
+    "collapse": "כיווץ המקטע",
+    "expand": "הרחבת המקטע",
+    "fill": {
+      "label": "מילוי",
+      "none": "ללא מילוי"
+    },
+    "layout": {
+      "label": "פריסה",
+      "auto": "אוטומטית",
+      "manual": "ידנית",
+      "autoHint": "הפריטים נעטפים כדי למלא את הרוחב; הגובה עוקב אחריהם"
+    },
+    "size": {
+      "label": "גודל",
+      "custom": "מותאם אישית",
+      "width": "רוחב",
+      "height": "גובה",
+      "lockRatio": "נעילת יחס הרוחב-גובה",
+      "unlockRatio": "ביטול נעילת יחס הרוחב-גובה",
+      "autoHeight": "פריסה אוטומטית קובעת את הגובה לפי התוכן",
+      "presets": {
+        "a4": "A4",
+        "web": "Web"
+      }
+    }
+  },
+  "lock": "נעילה",
+  "locked": "נעול",
+  "unlock": "ביטול נעילה",
+  "align": {
+    "title": "יישור",
+    "left": "שמאל",
+    "center": "מרכז אופקי",
+    "right": "ימין",
+    "top": "למעלה",
+    "middle": "מרכז אנכי",
+    "bottom": "למטה"
+  },
+  "distribute": {
+    "horizontal": "באופן אופקי",
+    "vertical": "באופן אנכי"
+  },
+  "nudge": {
+    "left": "הזזה שמאלה",
+    "right": "הזזה ימינה",
+    "up": "הזזה למעלה",
+    "down": "הזזה למטה",
+    "leftLarge": "הזזה שמאלה 10pt",
+    "rightLarge": "הזזה ימינה 10pt",
+    "upLarge": "הזזה למעלה 10pt",
+    "downLarge": "הזזה למטה 10pt"
+  },
+  "relations": {
+    "connect": "חיבור"
+  },
+  "typography": "טיפוגרפיה",
+  "noteBackground": "רקע הפתק",
+  "textColor": "צבע טקסט",
+  "fontSize": "גודל גופן",
+  "noteFills": {
+    "yellow": "צהוב",
+    "green": "ירוק",
+    "blue": "כחול",
+    "pink": "ורוד",
+    "gray": "אפור"
+  },
+  "textColors": {
+    "ink": "דיו",
+    "muted": "אפור",
+    "red": "אדום",
+    "blue": "כחול",
+    "green": "ירוק",
+    "purple": "סגול"
+  },
+  "selectionTextColors": {
+    "default": "ברירת מחדל",
+    "gray": "אפור",
+    "red": "אדום",
+    "amber": "כתום",
+    "yellow": "צהוב",
+    "green": "ירוק",
+    "teal": "ירוק-כחול",
+    "cyan": "טורקיז",
+    "blue": "כחול",
+    "purple": "סגול",
+    "pink": "ורוד",
+    "white": "לבן"
+  },
+  "textAlignments": {
+    "left": "שמאל",
+    "center": "מרכז",
+    "right": "ימין"
+  },
+  "verticalAlignments": {
+    "top": "למעלה",
+    "middle": "אמצע",
+    "bottom": "למטה"
+  },
+  "revealInCanvas": "הצגה בקנבס",
+  "shortcuts": {
+    "panCanvas": "הזזת הקנבס",
+    "zoomReset": "איפוס התצוגה",
+    "nudgeSelection": "הזזת הבחירה",
+    "nudgeLarge": "הזזה ב-10px"
+  },
+  "dropToSave": "שחררו כדי לשמור במרחב הנוכחי",
+  "cancelInteraction": "ביטול האינטראקציה עם הקנבס",
+  "htmlSandboxAssetsBlocked": "חסר {count} משאב ל-HTML הנוכחי. מומלץ לייבא את התיקייה המלאה. | חסרים {count} משאבים ל-HTML הנוכחי. מומלץ לייבא את התיקייה המלאה.",
+  "moveToContainer": "העברה למכל",
+  "spaceRoot": "שורש המרחב",
+  "addContent": {
+    "title": "הוספת תוכן",
+    "importFiles": "ייבוא קבצים…"
+  }
+}

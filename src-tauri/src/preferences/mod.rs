@@ -55,6 +55,8 @@ pub enum LocalePreference {
     Italian,
     #[serde(rename = "ru")]
     Russian,
+    #[serde(rename = "he")]
+    Hebrew,
 }
 
 #[derive(Deserialize, Serialize, ts_rs::TS)]

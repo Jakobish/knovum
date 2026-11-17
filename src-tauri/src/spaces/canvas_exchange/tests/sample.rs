@@ -6,7 +6,7 @@ use super::super::{
 };
 use super::*;
 
-const LOCALES: [LocalePreference; 11] = [
+const LOCALES: [LocalePreference; 12] = [
     LocalePreference::English,
     LocalePreference::SimplifiedChinese,
     LocalePreference::TraditionalChinese,
@@ -18,6 +18,7 @@ const LOCALES: [LocalePreference; 11] = [
     LocalePreference::BrazilianPortuguese,
     LocalePreference::Italian,
     LocalePreference::Russian,
+    LocalePreference::Hebrew,
 ];
 
 #[test]

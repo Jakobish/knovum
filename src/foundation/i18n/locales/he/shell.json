@@ -1,0 +1,37 @@
+{
+  "commands": {
+    "title": "לוח הפקודות",
+    "searchPlaceholder": "חיפוש פקודות…",
+    "noMatches": "לא נמצאו פקודות תואמות"
+  },
+  "commandUnavailable": {
+    "nothingToUndo": "אין מה לבטל",
+    "nothingToRedo": "אין מה לבצע מחדש",
+    "noSelection": "קודם יש לבחור תוכן",
+    "notEnoughScenes": "אין סצנה אחרת",
+    "selectionNotEligible": "הבחירה הזו אינה יכולה להשתמש בפעולה",
+    "checking": "בודק זמינות",
+    "busy": "פעולה נמצאת בתהליך"
+  },
+  "layout": {
+    "toggleRightSidebar": "הצגה או הסתרה של סרגל הצד הימני",
+    "toggleSidebar": "החלפת סרגל הצד",
+    "resizeSidebar": "שינוי רוחב סרגל הצד",
+    "resizeRightSidebar": "שינוי רוחב סרגל הצד הימני",
+    "saveFailed": "לא ניתן היה לשמור את פריסת סביבת העבודה"
+  },
+  "shortcuts": {
+    "title": "קיצורי מקלדת",
+    "search": "חיפוש קיצורי מקלדת",
+    "categories": {
+      "general": "כללי",
+      "navigation": "ניווט",
+      "canvas": "קנבס",
+      "editing": "עריכה"
+    },
+    "noMatches": "לא נמצאו קיצורי מקלדת תואמים"
+  },
+  "startup": {
+    "starting": "מפעיל את Knovum…"
+  }
+}

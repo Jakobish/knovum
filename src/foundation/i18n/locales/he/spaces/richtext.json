@@ -1,0 +1,127 @@
+{
+  "ai": {
+    "title": "כתיבת בינה מלאכותית",
+    "selectText": "בחרו קודם תוכן טקסט.",
+    "failed": "יצירת הבינה המלאכותית נכשלה",
+    "applyFailed": "לא ניתן היה להחיל את תוצאת הבינה המלאכותית",
+    "actions": {
+      "adjustTone": "התאמת הטון",
+      "fixGrammar": "תיקון דקדוק ואיות",
+      "extend": "הרחבת טקסט",
+      "reduce": "סיכום ודחיסה",
+      "simplify": "פישוט הניסוח",
+      "emojify": "הוספת אימוג׳י",
+      "improve": "ליטוש ושיפור",
+      "complete": "השלמה אוטומטית",
+      "summarize": "סיכום",
+      "translate": "תרגום"
+    },
+    "tones": {
+      "academic": "אקדמי",
+      "business": "מקצועי",
+      "casual": "נינוח",
+      "confident": "בטוח",
+      "creative": "יצירתי",
+      "friendly": "ידידותי",
+      "humorous": "הומוריסטי",
+      "informative": "ברור ומידעי",
+      "inspirational": "מעורר השראה",
+      "objective": "אובייקטיבי",
+      "persuasive": "משכנע"
+    },
+    "needContext": "הציבו את הסמן אחרי טקסט קיים או בחרו טקסט כהקשר."
+  },
+  "find": {
+    "title": "חיפוש טקסט",
+    "placeholder": "חיפוש במסמך…",
+    "previous": "ההתאמה הקודמת",
+    "next": "ההתאמה הבאה",
+    "toggleReplace": "הצגת החלפה",
+    "replace": {
+      "action": "החלפה",
+      "placeholder": "החלפה עם…"
+    },
+    "replaceAll": "החלפת הכול"
+  },
+  "paragraph": "פסקה",
+  "heading1": "כותרת 1",
+  "heading2": "כותרת 2",
+  "heading3": "כותרת 3",
+  "heading4": "כותרת 4",
+  "heading5": "כותרת 5",
+  "heading6": "כותרת 6",
+  "headings": {
+    "menu": "טיפוגרפיה"
+  },
+  "bold": "מודגש",
+  "italic": "נטוי",
+  "underline": "קו תחתון",
+  "strike": "קו חוצה",
+  "inlineCode": "קוד מוטבע",
+  "horizontalRule": "קו מפריד",
+  "highlight": "הדגשה",
+  "superscript": "כתב עילי",
+  "subscript": "כתב תחתי",
+  "align": {
+    "left": "יישור לשמאל",
+    "center": "יישור למרכז",
+    "right": "יישור לימין",
+    "justify": "יישור לשני הצדדים"
+  },
+  "highlightColor": {
+    "yellow": "צהוב",
+    "green": "ירוק",
+    "blue": "כחול",
+    "pink": "ורוד",
+    "clear": "ניקוי ההדגשה"
+  },
+  "image": {
+    "insert": "הוספת תמונה",
+    "source": {
+      "localFile": "קובץ מקומי",
+      "url": "כתובת URL"
+    },
+    "url": {
+      "label": "כתובת התמונה",
+      "invalid": "הזינו כתובת תמונת http:// או https:// תקינה."
+    },
+    "alt": {
+      "label": "תיאור התמונה",
+      "placeholder": "תארו את התמונה עבור קוראי מסך"
+    },
+    "choose": "בחירת תמונה",
+    "uploadFailed": "הוספת התמונה נכשלה",
+    "dropDocumentHint": "בחרו קובץ או גררו תמונה לעורך המסמך.",
+    "dropNow": "שחררו כדי להוסיף תמונה",
+    "insertFailed": "לא ניתן היה להוסיף את התמונה"
+  },
+  "link": {
+    "label": "קישור",
+    "placeholder": "הזינו או הדביקו כתובת URL",
+    "remove": "הסרת הקישור",
+    "editor": {
+      "title": "עריכת קישור",
+      "description": "הוסיפו קישור אינטרנט או אימייל לטקסט הנבחר."
+    },
+    "url": "כתובת הקישור",
+    "invalid": "הזינו קישור HTTP, ‏HTTPS או mailto תקין.",
+    "open": "פתיחת הקישור",
+    "updateFailed": "לא ניתן היה לעדכן את הקישור",
+    "openFailed": "לא ניתן היה לפתוח את הקישור"
+  },
+  "bulletList": "רשימת תבליטים",
+  "orderedList": "רשימה ממוספרת",
+  "taskList": "רשימת משימות",
+  "blockquote": "ציטוט",
+  "listMenu": "סגנונות רשימה",
+  "table": {
+    "title": "טבלה",
+    "addRow": "הוספת שורה למטה",
+    "addColumn": "הוספת עמודה מימין",
+    "delete": "מחיקת הטבלה"
+  },
+  "statistics": {
+    "words": "{count} מילה | {count} מילים",
+    "characters": "{count} תו | {count} תווים"
+  }
+}

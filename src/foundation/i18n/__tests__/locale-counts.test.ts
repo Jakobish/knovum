@@ -33,6 +33,23 @@ describe("desktop count messages", () => {
   });
 });
 
+describe("Hebrew count messages", () => {
+  it.each([
+    [1, "1 מודל"],
+    [2, "2 מודלים"],
+    [5, "5 מודלים"],
+    [0, "0 מודלים"],
+  ])("selects the correct form for %s", (count, expected) => {
+    const previous = appI18n.global.locale.value;
+    appI18n.global.locale.value = "he";
+    try {
+      expect(appI18n.global.t("settings.ai.models.count", { count }, count)).toBe(expected);
+    } finally {
+      appI18n.global.locale.value = previous;
+    }
+  });
+});
+
 describe("Russian count messages", () => {
   it.each([
     [0, "0 моделей"],

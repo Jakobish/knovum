@@ -1,0 +1,35 @@
+{
+  "title": "סוכני שולחן עבודה",
+  "description": "השתמשו בסוכני בינה מלאכותית נתמכים שכבר מותקנים ומחוברים במחשב הזה. סוכנים מופעלים ירוצו עם הכלים, שרתי MCP והמיומנויות הזמינים שלהם, ללא אישור לכל פעולה.",
+  "check": "בדיקת סוכנים",
+  "enable": "הפעלה",
+  "disable": "השבתה",
+  "status": {
+    "checking": "בודק",
+    "checkFailed": "הבדיקה נכשלה"
+  },
+  "entry": {
+    "missing": "נקודת הכניסה של הפקודה לא זוהתה",
+    "applicationOnly": "האפליקציה נמצאה; הפקודה אינה זמינה",
+    "commandDetected": "הפקודה זוהתה"
+  },
+  "requiredCommands": "פקודה נדרשת: {commands}",
+  "connectionHelp": "עזרה לחיבור {name}",
+  "officialDocumentation": "הנחיות רשמיות",
+  "acpSetup": "הגדרת ACP",
+  "detectionBoundary": "בודק רק זמינות הפקודה; ההתחברות וקישוריות ACP אינן מאומתות.",
+  "connections": {
+    "executableCli": {
+      "title": "ACP ישיר",
+      "requirements": "התקינו CLI רשמי עם תמיכת ACP והוסיפו את תיקיית הפקודה שלו ל-PATH."
+    },
+    "nodeAdapter": {
+      "title": "מתאם ACP",
+      "requirements": "דורש את ה-CLI הרשמי ואת Node.js ‏(npx). השימוש הראשון עשוי להוריד את מתאם ה-ACP."
+    },
+    "standaloneServer": {
+      "title": "שרת ACP עצמאי",
+      "requirements": "הורידו את ארכיון ה-ACP הרשמי, שמרו את קובצי הליווי שלו והוסיפו את תיקיית השרת ל-PATH."
+    }
+  }
+}

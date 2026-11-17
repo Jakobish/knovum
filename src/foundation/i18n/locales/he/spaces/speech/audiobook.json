@@ -1,0 +1,31 @@
+{
+  "chapterTitle": "כותרת הפרק",
+  "configurationInvalid": "לגרסת הספר הדיגיטלי הזו אין שיוכי תפקידים תקינים. ייבאו או בנו מחדש את התסריט, ואז שמרו גרסה חדשה.",
+  "lexicon": {
+    "title": "מילון הגייה",
+    "hint": "החליפו שמות או מונחים בקריאה המדויקת המשמשת בסינתזה.",
+    "word": "מילה או מונח",
+    "reading": "הגייה",
+    "add": "הוספת הגייה",
+    "remove": "הסרת הגייה",
+    "invalid": "השלימו כל ערך והסירו מילים כפולות."
+  },
+  "moveUp": "הזזת הפרק למעלה",
+  "moveDown": "הזזת הפרק למטה",
+  "removeChapter": "הסרת הפרק",
+  "removeParagraph": "הסרת הפסקה",
+  "addParagraph": "הוספת פסקה",
+  "addChapter": "הוספת פרק",
+  "wavPrecision": "דיוק WAV",
+  "paragraphPause": "השהיה בין פסקאות (ms)",
+  "chapterPause": "השהיה בין פרקים (ms)",
+  "title": "כותרת הספר",
+  "author": "מחבר",
+  "narrator": "קריין",
+  "cover": "עטיפה",
+  "noCover": "אין עטיפה",
+  "boundCover": "גרסת עטיפה שמורה",
+  "coverRequiresEncodedOutput": "בחרו MP3 או M4B כדי להטמיע עטיפה.",
+  "outputSettings": "הגדרות פלט",
+  "metadataSettings": "פרטי הספר"
+}

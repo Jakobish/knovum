@@ -1,0 +1,99 @@
+{
+  "nodes": [
+    {
+      "id": "start",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 260,
+      "height": 380,
+      "text": "התחילו כאן\nהמרחב הזה הוא דוגמה קטנה: האם כדאי לבית קפה לפתוח סניף שני? הכול כאן בדוי, ואפשר למחוק בכל עת.\n\n1. בחרו את סקירת השוק ובחרו ב“פתיחת PDF”. הוא ייפתח בתוך Knovum.\n\n2. עמוד 3 של הסקירה ותמונת הלוח הם רק פיקסלים. Knovum קורא אותם במחשב הזה: בחרו אחד מהם וחפשו “טקסט שזוהה”. ההרצה הראשונה מורידה מודל קטן.\n\n3. חברו מודל בהגדרות ושאלו: “כמה זמן נמשכים החודשים ללא שכר דירה, ומתי הסניף יגיע לאיזון?” כל תשובה מציינת מקור, וציטוט מוביל לעמוד.",
+      "color": "3"
+    },
+    {
+      "id": "sources",
+      "type": "group",
+      "x": 296,
+      "y": 0,
+      "width": 550,
+      "height": 388,
+      "label": "מקורות"
+    },
+    {
+      "id": "brief",
+      "type": "file",
+      "x": 316,
+      "y": 48,
+      "width": 210,
+      "height": 320,
+      "file": "assets/harbor-street-market-brief.pdf"
+    },
+    {
+      "id": "whiteboard",
+      "type": "file",
+      "x": 546,
+      "y": 48,
+      "width": 280,
+      "height": 190,
+      "file": "assets/mill-lane-whiteboard.png"
+    },
+    {
+      "id": "thinking",
+      "type": "group",
+      "x": 296,
+      "y": 424,
+      "width": 550,
+      "height": 236,
+      "label": "המחשבה שלכם"
+    },
+    {
+      "id": "question",
+      "type": "text",
+      "x": 316,
+      "y": 472,
+      "width": 245,
+      "height": 168,
+      "text": "השאלה\nהאם Harbor Street Coffee צריכה להיפתח במיל ליין 41?\n\nעדיין פתוח: הירידה בקיץ, והאם בעל הדירה יאשר בכתב את החודשים ללא שכר דירה.",
+      "color": "5"
+    },
+    {
+      "id": "draft",
+      "type": "text",
+      "x": 581,
+      "y": 472,
+      "width": 245,
+      "height": 168,
+      "text": "טיוטת תשובה\nלפתוח, אם החודשים ללא שכר דירה מאושרים. ההשקעה בהקמה תחזיר את עצמה בחודש 14 בקצב הצפוי של 190 הזמנות ביום.\n\nהחליפו את זה בדעתכם.",
+      "color": "4"
+    }
+  ],
+  "edges": [
+    {
+      "id": "brief-question",
+      "fromNode": "brief",
+      "fromSide": "bottom",
+      "toNode": "question",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "מבסס"
+    },
+    {
+      "id": "whiteboard-question",
+      "fromNode": "whiteboard",
+      "fromSide": "bottom",
+      "toNode": "question",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "מבסס"
+    },
+    {
+      "id": "question-draft",
+      "fromNode": "question",
+      "fromSide": "right",
+      "toNode": "draft",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "מוביל אל"
+    }
+  ]
+}

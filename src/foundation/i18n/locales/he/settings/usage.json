@@ -1,0 +1,40 @@
+{
+  "title": "שימוש",
+  "description": "שימוש בטוקנים של הבינה המלאכותית המובנית ופעילות בשנה האחרונה.",
+  "tokens": {
+    "total": "סך הטוקנים",
+    "input": "טוקני קלט",
+    "output": "טוקני פלט",
+    "split": "תערובת קלט ופלט"
+  },
+  "requests": "שימושים",
+  "activeDays": "ימים פעילים",
+  "streak": {
+    "current": "רצף ימים פעילים נוכחי",
+    "longest": "רצף הימים הפעילים הארוך ביותר"
+  },
+  "activity": {
+    "title": "פעילות טוקנים",
+    "insightsTitle": "סקירת הפעילות",
+    "description": "יום שיא · {peak} טוקנים",
+    "tokenCount": "{tokens} טוקן",
+    "less": "פחות",
+    "more": "יותר",
+    "weekdays": {
+      "monday": "ב׳",
+      "wednesday": "ד׳",
+      "friday": "ו׳"
+    },
+    "empty": "אין שימוש בטוקנים בשנה האחרונה."
+  },
+  "purpose": {
+    "title": "שימוש לפי יכולת",
+    "editor": "כלי כתיבה",
+    "knowledge": "יצירת ידע",
+    "knowledgeIndexing": "אינדוקס ידע",
+    "translation": "תרגום",
+    "visualAnalysis": "הבנה חזותית",
+    "builtinAgent": "סוכן מובנה"
+  },
+  "providerReported": "הסכומים כוללים רק פעילות שמדווחת שימוש; ייתכן שחלק מהפעולות חסרות."
+}

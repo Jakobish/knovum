@@ -1,0 +1,11 @@
+{
+  "playbackFailed": "לא ניתן היה להפעיל את מדיה המקור. בדקו שקובץ המדיה קריא.",
+  "followPlayback": "מעקב אחרי ההשמעה",
+  "load": "טעינת {title}",
+  "play": "ניגון",
+  "closePlayback": "סגירת הניגון",
+  "timeline": "ציר זמן המדיה",
+  "transcribe": "תמלול",
+  "transcribing": "מעבד את התמלול",
+  "retranscribe": "תמלול מחדש"
+}

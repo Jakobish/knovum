@@ -1,0 +1,13 @@
+{
+  "outline": {
+    "title": "מתאר"
+  },
+  "editorOutline": {
+    "title": "מתאר המסמך"
+  },
+  "rightSidebarViews": "תצוגות סרגל הצד הימני",
+  "rename": {
+    "nameRequired": "הזינו שם.",
+    "failed": "לא ניתן היה לשמור את השם. לחצו Enter כדי לנסות שוב."
+  }
+}

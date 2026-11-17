@@ -11,9 +11,10 @@ and alphabetic region uppercase (`CN`), for example `zh-CN` or `zh-Hans-CN`. A r
 `en` identifies general English. Module paths below each language root use kebab-case; object keys
 use lowerCamelCase. Each language has the same module tree.
 
-The display languages are `en`, `zh-CN`, `zh-TW`, `ja`, `ko`, `fr`, `de`, `es`, `pt-BR`, `it`, and `ru`.
+The display languages are `en`, `zh-CN`, `zh-TW`, `ja`, `ko`, `fr`, `de`, `es`, `pt-BR`, `it`, `ru`, and `he`.
 Portuguese uses Brazilian wording. Arabic is not a display language. The AI translation target
-catalog is a separate capability and may include languages unavailable in the interface.
+catalog is a separate capability and may include languages unavailable in the interface. Hebrew is a
+right-to-left display language; the interface root sets `dir="rtl"` when Hebrew is active.
 
 ## Module boundaries
 
@@ -93,7 +94,7 @@ deletion, uncertain external outcomes and actionable error recovery explicit.
 Translate a complete sentence, including counts and units. Count messages use vue-i18n plural forms;
 pass named `{ count }` and an explicit plural count when needed. Chinese, Japanese, and Korean can use
 one form. Russian uses `one | few | many` forms selected through `Intl.PluralRules`; French and Brazilian
-Portuguese use the singular form for zero and one. All languages expose the same unique placeholder names.
+Portuguese use the singular form for zero and one; Hebrew uses the singular form only for exactly one. All languages expose the same unique placeholder names.
 
 English uses sentence case, retaining proper names, product terms and acronyms. Simplified Chinese
 uses these terms consistently:

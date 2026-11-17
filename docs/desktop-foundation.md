@@ -61,6 +61,8 @@ be resolved before IPC. Interface language support is documented in `src/foundat
 Traditional Chinese is selected for `zh-Hant` or Taiwan, Hong Kong, and Macau system locales;
 an explicit `zh-Hans` script selects Simplified Chinese. Other supported language families use
 their registered display locale; Portuguese uses `pt-BR`. An unsupported OS language selects English.
+Hebrew resolves to `he` and switches the document root to `dir="rtl"`; native menu and tray labels use
+Hebrew wording with right-to-left reading order.
 
 Register only plugins used by current product flows. Shell, arbitrary process execution, WebSocket,
 and broad system HTTP access remain absent until an owning feature has a concrete, scoped need.

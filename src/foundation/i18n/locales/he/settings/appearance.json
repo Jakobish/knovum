@@ -1,0 +1,51 @@
+{
+  "title": "מראה",
+  "description": "התאמה של ערכת נושא, קנה המידה של הגופן וצפיפות הפריסה.",
+  "saveFailed": "לא ניתן היה לשמור את הגדרות המראה",
+  "theme": {
+    "label": "ערכת נושא",
+    "description": "בחרו בהיר, כהה או התאמה למערכת."
+  },
+  "textSize": {
+    "label": "גודל גופן",
+    "description": "התאמת גודל הטקסט בממשק."
+  },
+  "density": {
+    "label": "צפיפות",
+    "description": "התאמת גודל הפקדים והרווחים."
+  },
+  "language": {
+    "label": "שפה",
+    "description": "בחרו שפת תצוגה או התאימו לשפת המערכת."
+  },
+  "options": {
+    "followSystem": "התאמה למערכת",
+    "theme": {
+      "light": "בהיר",
+      "dark": "כהה"
+    },
+    "textSize": {
+      "small": "קטן",
+      "default": "ברירת מחדל",
+      "large": "גדול"
+    },
+    "density": {
+      "compact": "קומפקטי",
+      "comfortable": "נוח"
+    },
+    "language": {
+      "english": "אנגלית",
+      "simplifiedChinese": "סינית מפושטת",
+      "traditionalChinese": "סינית מסורתית",
+      "japanese": "יפנית",
+      "korean": "קוריאנית",
+      "french": "צרפתית",
+      "german": "גרמנית",
+      "spanish": "ספרדית",
+      "italian": "איטלקית",
+      "russian": "רוסית",
+      "brazilianPortuguese": "פורטוגזית ברזילאית",
+      "hebrew": "עברית"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "knowledge-work": {
+    "name": "ידע המרחב",
+    "description": "קריאה, ארגון ופרסום של ידע מהמרחב עם מקורות ניתנים למעקב."
+  },
+  "evidence-research": {
+    "name": "מחקר ראיות",
+    "description": "השוואת מקורות והכנת תקצירי מחקר או החלטות."
+  },
+  "meeting-notes": {
+    "name": "פרוטוקולי פגישות",
+    "description": "חילוץ החלטות ופריטי פעולה מתמלילי פגישות."
+  },
+  "document-delivery": {
+    "name": "מסירת מסמכים",
+    "description": "הכנת דוחות מבוססי מקורות ומסירה בפורמט הנדרש."
+  },
+  "study-companion": {
+    "name": "בן לוויה ללימודים",
+    "description": "הפיכת חומרי מרחב למדריכי לימוד, תרגילים ותוכניות חזרה."
+  },
+  "github-work": {
+    "name": "עבודה עם GitHub",
+    "description": "חיבור GitHub כדי לחקור מאגרים ולהכין issues מבוססים."
+  },
+  "notion-work": {
+    "name": "ידע Notion",
+    "description": "חיבור Notion כדי לחקור עמודים ולפרסם ידע מאורגן."
+  },
+  "linear-work": {
+    "name": "עבודה עם Linear",
+    "description": "חיבור Linear כדי להפוך החלטות לעבודת פרויקט ניתנת למעקב."
+  }
+}

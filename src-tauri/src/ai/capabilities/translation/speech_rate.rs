@@ -24,6 +24,7 @@ pub(crate) fn syllables_per_second(language: &str) -> Option<f64> {
         "de" => 6.0,
         "ru" => 6.9,
         "ar" => 6.0,
+        "he" => 6.0,
         _ => return None,
     })
 }
@@ -91,6 +92,17 @@ fn vowel_set(language: &str) -> fn(char) -> bool {
                     'ا' | 'أ' | 'إ' | 'آ' | 'ٱ' | 'و' | 'ي' | 'ى'
                     // Short-vowel diacritics, when the text carries them at all.
                     | '\u{064B}'..='\u{0650}'
+                )
+            }
+        }
+        // Unvocalized Hebrew omits its short vowels; matres lectionis and nikud carry the rest.
+        "he" => {
+            |character| {
+                matches!(
+                    character,
+                    'א' | 'ה' | 'ו' | 'י'
+                    // Nikud vowel points, when the text carries them at all.
+                    | '\u{05B0}'..='\u{05BB}'
                 )
             }
         }

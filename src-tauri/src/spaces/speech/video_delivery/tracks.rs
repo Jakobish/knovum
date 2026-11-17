@@ -115,6 +115,7 @@ fn language_tag(language: &str) -> &str {
         "pt" => "por",
         "ru" => "rus",
         "ar" => "ara",
+        "he" => "heb",
         "hi" => "hin",
         _ => "und",
     }

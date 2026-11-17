@@ -1,0 +1,15 @@
+{
+  "failedAttempt": "היצירה נכשלה",
+  "removeFailedOutput": "הסרת הפריט שנכשל",
+  "knowledgeDerivation": "נוצר מתוך ידע",
+  "resourceTask": "משימת משאב",
+  "source": {
+    "knowledge": "ידע מקור",
+    "changed": "מקורות מסוימים השתנו אחרי שהפריט הזה נוצר."
+  },
+  "citations": "ציטוטים · {count}",
+  "createFromSelection": "יצירה מהבחירה",
+  "finishNodeOperation": "קודם סיימו או בטלו את פעולת הצומת הנוכחית.",
+  "tooManySources": "בחרו עד 32 משאבים ליצירה מתוכם.",
+  "noUsableSource": "בבחירה אין קובץ או טקסט שמודל יכול לקרוא."
+}

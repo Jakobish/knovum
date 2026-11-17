@@ -1,0 +1,13 @@
+{
+  "states": {
+    "queued": "בתור",
+    "running": "פועלת",
+    "waiting": "ממתינה",
+    "paused": "מושהית",
+    "succeeded": "הושלמה",
+    "completedWithErrors": "הושלמה עם שגיאות",
+    "failed": "נכשלה",
+    "cancelled": "בוטלה",
+    "cancelling": "מבטלת"
+  }
+}
