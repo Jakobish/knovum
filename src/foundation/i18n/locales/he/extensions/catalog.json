@@ -1,0 +1,11 @@
+{
+  "counts": "משאבים {resources} · תבניות {templates} · פרומפטים {prompts}",
+  "browse": "עיון במשאבים ובפרומפטים",
+  "kind": "סוג התוכן",
+  "item": "תוכן",
+  "resources": "משאבים",
+  "templates": "תבניות משאבים",
+  "prompts": "פרומפטים",
+  "parameters": "פרמטרים (JSON)",
+  "read": "קריאת התוכן שנבחר"
+}

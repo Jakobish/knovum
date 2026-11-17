@@ -20,6 +20,7 @@ export const TRANSLATION_TARGETS = [
   "it",
   "ru",
   "ar",
+  "he",
 ] as const;
 
 export type TranslationTarget = (typeof TRANSLATION_TARGETS)[number];
@@ -37,6 +38,7 @@ export const LABEL_KEY_BY_TRANSLATION_TARGET: Record<TranslationTarget, string> 
   it: "ai.languages.it",
   ru: "ai.languages.ru",
   ar: "ai.languages.ar",
+  he: "ai.languages.he",
 };
 
 export interface TranslationInput {

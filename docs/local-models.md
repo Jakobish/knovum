@@ -100,7 +100,8 @@ length. It runs on the probed audio.cpp backend (Metal, Vulkan or CPU). A region
 source span but no word spans: word timing is left to the separate Qwen3 Forced Aligner stage, so a
 Qwen3-ASR transcript has `segment_only` timing until it is aligned. Language detection holds for the
 whole request after the first region attributes a language, and the model's language labels are
-normalised to ISO codes. Its compute budget allows forty times the input duration for Q8_0 and sixty
+normalised to ISO codes. The Qwen3-ASR label set does not include Hebrew; Hebrew media is
+transcribed by the Whisper engines, whose automatic detection covers it. Its compute budget allows forty times the input duration for Q8_0 and sixty
 times for F16 on CPU, with ten- and fifteen-minute minima, capped at six hours.
 
 Forced alignment and speaker diarization are separate optional speech stages. Neither is required
@@ -126,7 +127,7 @@ results remain visible, while a manual edit invalidates timing only for the edit
 The locked aligner profile covers Chinese, English, Cantonese, French, German,
 Italian, Portuguese, Russian and Spanish. Japanese and Korean require optional
 upstream tokenizers absent from this reviewed runtime and return
-`unsupported_language`. Prepared PCM16 WAV samples are validated in Rust and passed to the audio.cpp supplier as finite float samples.
+`unsupported_language`; Hebrew is likewise unsupported by the locked profile. Prepared PCM16 WAV samples are validated in Rust and passed to the audio.cpp supplier as finite float samples.
 
 Speaker diarization offers official Sherpa-ONNX Pyannote 3.0 segmentation exports paired with 3D-Speaker
 embeddings: Pyannote INT8 + ERes2Net base (default), Pyannote FP32 + ERes2Net base, Pyannote INT8 + CAM++

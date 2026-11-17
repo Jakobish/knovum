@@ -1,0 +1,40 @@
+{
+  "title": "אחסון אובייקטים",
+  "description": "חברו דלי תואם S3 כדי שמודלי ענן יקבלו תמונות וסרטונים ככתובת URL במקום כנתונים מוטבעים. עובד עם Tencent COS, Alibaba OSS וכל שירות תואם S3.",
+  "connection": {
+    "title": "חיבור",
+    "description": "מיקום הדלי והזהות. השינויים נשמרים אוטומטית כשמסיימים לערוך.",
+    "endpoint": "נקודת קצה",
+    "endpointPlaceholder": "https://cos.ap-guangzhou.myqcloud.com",
+    "endpointDescription": "נקודת קצה של שירות תואם S3, חייבת להתחיל ב-https://",
+    "region": "אזור",
+    "regionPlaceholder": "ap-guangzhou",
+    "regionDescription": "קוד האזור שבו מתארח הדלי",
+    "bucket": "דלי",
+    "bucketDescription": "שם מזהה הדלי (3–63 תווים)",
+    "publicBaseUrl": "כתובת בסיס ציבורית",
+    "publicBaseUrlDescription": "דומיין דלי ציבורי או CDN אופציונלי שמגיש את האובייקטים שהועלו."
+  },
+  "credentials": {
+    "title": "אישורים",
+    "description": "האישורים נשמרים במסד הסודות המקומי ונשמרים אוטומטית.",
+    "accessKeyId": "Access key ID",
+    "secretAccessKey": "Secret access key"
+  },
+  "status": {
+    "testing": "בודק..."
+  },
+  "actions": {
+    "test": "בדיקת החיבור",
+    "testSuccess": "החיבור לאחסון האובייקטים עובד",
+    "testFailed": "החיבור לאחסון האובייקטים נכשל",
+    "loadFailed": "לא ניתן היה לקרוא את הגדרות אחסון האובייקטים"
+  },
+  "validation": {
+    "endpointRequired": "הזינו את נקודת הקצה של השירות.",
+    "endpointInvalid": "נקודת הקצה חייבת להיות כתובת https:// עם מארח.",
+    "regionRequired": "הזינו את קוד האזור.",
+    "bucketInvalid": "הדלי חייב להכיל 3–63 תווים של אותיות קטנות באנגלית, ספרות, '.' או '-'.",
+    "publicBaseUrlInvalid": "כתובת הבסיס הציבורית חייבת להיות כתובת https:// עם מארח."
+  }
+}

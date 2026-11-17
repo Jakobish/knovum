@@ -1,0 +1,182 @@
+{
+  "health": {
+    "title": "בדיקות ידע",
+    "description": "איתור ידע לא נתמך, סותר או מיושן במרחב הזה.",
+    "clean": "לא נמצאו בעיות.",
+    "critical": "{count} בעיה קריטית זוהתה | {count} בעיות קריטיות זוהו",
+    "issues": {
+      "unsupported-claim": "לטענה אין קשר תומך (Supports).",
+      "contradicted-claim": "לטענה מקובלת יש סתירה פעילה (Contradicts).",
+      "ungrounded-evidence": "לראיה אין מקור ייחוס תקין.",
+      "answered-open-question": "לשאלה פתוחה משויך קשר תשובה.",
+      "stale-provenance": "גרסת המקור השתנתה; נדרש אימות מחדש."
+    }
+  },
+  "index": {
+    "title": "אינדקס אחזור",
+    "task": "מאנדקס את המרחב",
+    "empty": "במרחב הזה אין עדיין טקסט לאינדוקס.",
+    "current": "האינדקס מכסה את כל המרחב",
+    "incomplete": "{count} קטע עדיין לא באינדקס | {count} קטעים עדיין לא באינדקס",
+    "unbuilt": "חיפוש סמנטי עדיין לא יכול לענות מהמרחב הזה",
+    "indexing": "מאנדקס …",
+    "coverage": "{indexed} מתוך {total} קטעים ניתנים לחיפוש",
+    "indexedAt": "נבנה {time}",
+    "build": "בניית אינדקס",
+    "fill": "השלמת האינדקס",
+    "done": "אוינדקס {count} קטע. | אוינדקסו {count} קטעים.",
+    "upToDate": "האינדקס כבר היה מעודכן."
+  },
+  "history": {
+    "title": "היסטוריית גרסאות הידע",
+    "empty": "אין עדיין שינויים.",
+    "actor": "שונה על ידי {actor}",
+    "events": {
+      "created": "נוצר",
+      "updated": "עודכן",
+      "drafted": "נוסח",
+      "accepted": "התקבל",
+      "contested": "שנוי במחלוקת",
+      "superseded": "הוחלף",
+      "invalidated": "נפסל",
+      "opened": "נפתח",
+      "resolved": "נפתר",
+      "restored": "שוחזר",
+      "linked": "קושר",
+      "unlinked": "נותק",
+      "applied": "הוחל",
+      "rejected": "נדחה",
+      "moved": "הועבר"
+    },
+    "loadFailed": "לא ניתן היה לטעון את היסטוריית הידע"
+  },
+  "icons": {
+    "select": "בחירת אייקון",
+    "general": "כללי",
+    "database": "מסד נתונים",
+    "document": "מסמך",
+    "bookmark": "סימנייה",
+    "tag": "תגית",
+    "layers": "שכבות",
+    "container": "מכל",
+    "intelligence": "בינה",
+    "experiment": "ניסוי",
+    "decision": "החלטה",
+    "question": "שאלה",
+    "idea": "רעיון"
+  },
+  "structuredKnowledge": "ידע מובנה",
+  "relations": {
+    "title": "קשרי ידע",
+    "symmetric": "דו-כיווני ({count})",
+    "incoming": "נכנסים ({count})",
+    "outgoing": "יוצאים ({count})",
+    "empty": "גררו עוגני צמתים או בחרו מספר פריטים כדי ליצור קשרים.",
+    "inspect": "פרטי החיבור",
+    "kind": "סוג הקשר",
+    "rationale": {
+      "label": "למה אלה מחוברים",
+      "add": "הוספה",
+      "placeholder": "תארו איך הפריטים האלה מחוברים…"
+    },
+    "color": "צבע קו הקשר",
+    "colors": {
+      "neutral": "ניטרלי",
+      "blue": "כחול",
+      "green": "ירוק",
+      "amber": "ענבר",
+      "red": "אדום",
+      "purple": "סגול"
+    },
+    "remove": {
+      "action": "הסרת הקשר",
+      "confirmation": "להסיר את הקשר עם “{title}”?"
+    },
+    "kinds": {
+      "reference": "הפניה",
+      "related": "קשור",
+      "supports": "תומך",
+      "contradicts": "סותר",
+      "depends-on": "תלוי ב-",
+      "supersedes": "מחליף",
+      "answers": "עונה על",
+      "uses": "משתמש ב-",
+      "derives-from": "נגזר מ-",
+      "caused-by": "נגרם על ידי"
+    }
+  },
+  "provenance": "מקור",
+  "sourceUpdates": {
+    "title": "המקורות השתנו",
+    "hint": "השתנה מאז שהפריט הזה נשמר. פתחו מקור כדי להשוות, או סמנו כנבדק כדי לשמור את המצב כמו שהוא.",
+    "open": "פתיחת המקור",
+    "reviewed": "סימון כנבדק"
+  },
+  "portal": {
+    "create": {
+      "action": "צומת פורטל חדש",
+      "description": "יצירת צומת פורטל לניווט מהיר למרחב אחר."
+    }
+  },
+  "objects": {
+    "custom": "אובייקט ידע מותאם אישית",
+    "create": {
+      "action": "אובייקט מותאם אישית חדש",
+      "description": "יצירת צומת אובייקט ידע בעזרת סכמה נבחרת."
+    }
+  },
+  "fields": {
+    "add": "הוספת שדה",
+    "title": "שדה מאפיין",
+    "key": "מפתח השדה",
+    "label": "שם השדה",
+    "kind": "סוג השדה",
+    "kindLabels": {
+      "text": "טקסט",
+      "number": "מספר",
+      "boolean": "בוליאני",
+      "date": "תאריך",
+      "node-ref": "הפניית צומת",
+      "enum": "אפשרויות enum"
+    },
+    "options": "אפשרויות enum (מופרדות בפסיקים)",
+    "required": "חובה",
+    "invalid": "כל שדה צריך שם ומזהה ייחודי.",
+    "remove": "הסרת השדה"
+  },
+  "status": {
+    "label": "סטטוס הידע",
+    "labels": {
+      "draft": "טיוטה",
+      "accepted": "התקבל",
+      "contested": "שנוי במחלוקת",
+      "superseded": "הוחלף",
+      "invalidated": "נפסל",
+      "open": "פתוח",
+      "resolved": "נפתר"
+    }
+  },
+  "summary": "סיכום",
+  "types": {
+    "label": "סוג ידע",
+    "description": "תיאור",
+    "icon": "אייקון",
+    "name": "שם הסוג",
+    "manage": {
+      "action": "ניהול סוגי ידע",
+      "description": "הגדרת המאפיינים של ידע מובנה במרחב הזה."
+    },
+    "delete": {
+      "action": "מחיקת הסוג…",
+      "description": "למחוק את “{name}”? לא ניתן למחוק סוג שבו אובייקטי ידע משתמשים."
+    },
+    "discardChanges": "לבטל את השינויים שלא נשמרו לסוג הזה?",
+    "emptyFields": "הוסיפו את המאפיינים שהידע הזה צריך.",
+    "create": "סוג חדש",
+    "none": "אין סוגי סכמה מותאמים אישית.",
+    "loadFailed": "לא ניתן היה לטעון את סוגי הסכמה"
+  },
+  "visual": {
+    "empty": "אין עדיין ניתוח תמונה"
+  }
+}

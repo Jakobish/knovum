@@ -14,6 +14,7 @@ pub fn language_name(target: &str) -> AppResult<&'static str> {
         "it" => Ok("Italian"),
         "ru" => Ok("Russian"),
         "ar" => Ok("Arabic"),
+        "he" => Ok("Hebrew"),
         _ => Err(AppError::invalid(format!(
             "Unsupported translation target: {target}"
         ))),

@@ -1,0 +1,54 @@
+{
+  "queue": {
+    "title": "עיבוד",
+    "pending": "ממתינות {count}",
+    "running": "מעבד {count}",
+    "failed": "נכשלו {count}"
+  },
+  "enrichmentJobType": {
+    "analyze_visual": "הבנה חזותית",
+    "analyze_media": "משך מדיה וצורת גל",
+    "transcribe_media": "תמלול אודיו ווידאו",
+    "parse_document": "חילוץ מסמך",
+    "recognize_text": "זיהוי טקסט",
+    "align_media_transcript": "יישור תמליל נבחר",
+    "diarize_media_transcript": "זיהוי דוברים"
+  },
+  "jobStatus": {
+    "pending": "בתור",
+    "running": "פועלת",
+    "awaiting_configuration": "דורש הגדרה",
+    "failed": "נכשלה",
+    "succeeded": "הושלמה",
+    "cancelled": "בוטלה"
+  },
+  "matchBadge": {
+    "imageDescription": "תיאור תמונה",
+    "videoCover": "כריכת וידאו",
+    "mediaTimeRange": "{start} – {end}"
+  },
+  "failed": "העיבוד נכשל",
+  "nodeUnavailable": "הצומת של המשימה כבר אינו זמין",
+  "imageProgress": "מעבד תמונה",
+  "mediaProgress": "מעבד מדיה",
+  "applyingEdit": "מחיל עריכות",
+  "loadingImage": "טוען תמונה",
+  "imageUnavailable": "התמונה אינה זמינה",
+  "document": {
+    "resources": {
+      "title": "משאבי המסמך",
+      "open": "פתיחת משאב מסמך {index}",
+      "occurrences": "בשימוש {count} פעם | בשימוש {count} פעמים",
+      "embedded": "תמונת מוטבע שחולצה מהמסמך.",
+      "rendered": "עמוד או אזור חזותי שעובד מה-PDF.",
+      "context": "הקשר",
+      "altText": "טקסט חלופי",
+      "embeddedBadge": "מוטבע",
+      "renderedBadge": "מעובד"
+    }
+  },
+  "visual": {
+    "waitingConfiguration": "הגדירו מודל הבנה חזותית כדי לנתח את התמונה או הווידאו הזה.",
+    "reanalyze": "ניתוח מחדש של התוכן החזותי"
+  }
+}

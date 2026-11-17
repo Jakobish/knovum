@@ -23,6 +23,7 @@ export const i18n = createI18n({
   pluralRules: {
     fr: (count) => (count === 0 || count === 1 ? 0 : 1),
     "pt-BR": (count) => (count === 0 || count === 1 ? 0 : 1),
+    he: (count) => (count === 1 ? 0 : 1),
     ru: (count, length) => {
       if (length === 1) return 0;
       const category = russianPlurals.select(count);

@@ -52,4 +52,5 @@ export const localeMessages = {
   "pt-BR": createLocaleMessages("pt-BR"),
   it: createLocaleMessages("it"),
   ru: createLocaleMessages("ru"),
+  he: createLocaleMessages("he"),
 } satisfies Record<Locale, Messages>;

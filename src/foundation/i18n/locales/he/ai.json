@@ -1,0 +1,53 @@
+{
+  "target": {
+    "label": "יעד הביצוע",
+    "modelApi": "Model API · הרצה ישירה",
+    "desktopAgent": "Desktop Agent · הפלט תלוי בכלים ובמיומנויות הנוכחיים שלו",
+    "none": "אין יעד ביצוע תואם"
+  },
+  "unavailable": {
+    "title": "אין יעד בינה מלאכותית תואם",
+    "description": "הגדירו מודל תואם או הפעילו Desktop Agent מותקן עבור הפעולה הזו."
+  },
+  "configuration": {
+    "open": "הגדרת מודלים",
+    "unavailable": "לא ניתן היה לטעון את הגדרות הבינה המלאכותית"
+  },
+  "execution": {
+    "model": "בוצע באמצעות {provider} · {model}",
+    "desktopAgent": "בוצע על ידי {name} · Desktop Agent"
+  },
+  "modelChoice": {
+    "default": "ברירת מחדל",
+    "run": "הרצה"
+  },
+  "languages": {
+    "zhCn": "סינית מפושטת",
+    "zhTw": "סינית מסורתית",
+    "en": "אנגלית",
+    "ja": "יפנית",
+    "ko": "קוריאנית",
+    "fr": "צרפתית",
+    "de": "גרמנית",
+    "es": "ספרדית",
+    "pt": "פורטוגזית",
+    "it": "איטלקית",
+    "ru": "רוסית",
+    "ar": "ערבית",
+    "he": "עברית"
+  },
+  "localModels": {
+    "memoryAdvisory": "מתאים למכונות עם {memory} זיכרון. במחשב הזה יצירת דיבור עשויה להידחות כשזיכרון אוזל; MOSS-TTS-Nano הוא החלופה הקלה יותר."
+  },
+  "readiness": {
+    "download": "ההרצה הראשונה מורידה את {model} ({size}). עקבו אחריה במשימות.",
+    "downloading": "מוריד קודם את {model} ({size}). עקבו אחרי ההורדה במשימות.",
+    "configure": "עדיין לא הוגדר מודל עבור {purpose}.",
+    "installAgent": "{agent} אינו מותקן במחשב הזה, או ששורת הפקודה שלו אינה ב-PATH. התקינו אותו ונסו שוב.",
+    "manageModels": "ניהול מודלים מקומיים",
+    "manageAgents": "ניהול Desktop Agents",
+    "modelsUnavailable": "לא ניתן היה לבדוק את המודלים המקומיים. נסו שוב בעוד רגע.",
+    "agentsUnavailable": "לא ניתן היה לבדוק אילו Desktop Agents מותקנים. נסו שוב בעוד רגע.",
+    "platformUnavailable": "המודל המקומי שנדרש אינו זמין במחשב הזה."
+  }
+}

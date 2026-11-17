@@ -20,6 +20,8 @@ describe("system display language", () => {
     ["pt-PT", "pt-BR"],
     ["it-IT", "it"],
     ["ru-RU", "ru"],
+    ["he-IL", "he"],
+    ["he", "he"],
     ["en-GB", "en"],
     ["ar-SA", "en"],
     ["nl-NL", "en"],

@@ -1,0 +1,15 @@
+{
+  "task": "הפרדת מקורות",
+  "title": "הפרדת שירה ורקע",
+  "stems": {
+    "vocals": "שירה",
+    "background": "רקע"
+  },
+  "background": "רקע מופרד",
+  "running": "מפריד אודיו",
+  "starting": "מכין את ההפרדה…",
+  "cancelling": "מבטל…",
+  "completed": "השירה והרקע נוספו לקנבס",
+  "sourceUnavailable": "מידע האודיו עוד לא מוכן",
+  "tooLong": "בחרו מדיה באורך עד 6 שעות"
+}

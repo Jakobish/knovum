@@ -1,0 +1,34 @@
+{
+  "title": "משימות",
+  "summary": "משימות, {count} בסך הכול",
+  "scopeFilter": "היקף המשימות",
+  "all": "הכול",
+  "currentSpace": "המרחב הנוכחי",
+  "empty": "אין משימות.",
+  "emptyCurrentSpace": "אין משימות במרחב הזה.",
+  "scope": "מרחב",
+  "subject": "פריט",
+  "status": {
+    "queued": "בתור",
+    "running": "פועלת",
+    "attention": "דורשת טיפול",
+    "failed": "נכשלה",
+    "succeeded": "הושלמה",
+    "cancelled": "בוטלה"
+  },
+  "clearCompleted": "ניקוי שהושלמו",
+  "openSubject": "פתיחת הפריט הקשור",
+  "resolve": "השלמת ההגדרה",
+  "dismiss": "התעלמות",
+  "cancel": "ביטול המשימה",
+  "cancelling": "מבטל…",
+  "forceDismiss": "הסרה מהרשימה",
+  "failed": "לא ניתן היה להשלים את המשימה הזו.",
+  "resources": {
+    "verifying": "מאמת שלמות…",
+    "preparingInference": "מכין רכיבי בינה מלאכותית מקומיים…",
+    "downloadSize": "השימוש הראשון דורש {size} של הורדות משאבים מקומיים",
+    "installing": "מתקין משאבים מקומיים…"
+  },
+  "retryAll": "ניסיון חוזר לכולם"
+}

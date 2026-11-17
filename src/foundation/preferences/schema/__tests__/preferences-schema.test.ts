@@ -17,7 +17,7 @@ const current = {
 } as const;
 
 describe("preferences schema", () => {
-  it.each(["zh-TW", "ja", "ko", "fr", "de", "es", "pt-BR", "it", "ru"])(
+  it.each(["zh-TW", "ja", "ko", "fr", "de", "es", "pt-BR", "it", "ru", "he"])(
     "persists the selected display language %s",
     (locale) => {
       const value = { ...current, locale };
