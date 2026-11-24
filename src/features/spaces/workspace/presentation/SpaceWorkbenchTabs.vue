@@ -4,13 +4,14 @@ import { error as logError } from "@tauri-apps/plugin-log";
 import { isString } from "es-toolkit";
 import { storeToRefs } from "pinia";
 import { TabsList, TabsRoot } from "reka-ui";
-import { nextTick, useTemplateRef, watch, watchEffect } from "vue";
+import { computed, nextTick, useTemplateRef, watch, watchEffect } from "vue";
 import { useI18n } from "vue-i18n";
 import { useRoute } from "vue-router";
 import { toast } from "vue-sonner";
 
 import { syncWorkspaceMenuState } from "../../../../foundation/desktop/workspace-menu";
 import { formatErrorDiagnostic, getErrorMessage } from "../../../../foundation/errors/error-format";
+import { localeDirection } from "../../../../foundation/i18n/instance";
 import { isApplicationLeaveCancelled } from "../../../../shared/contracts/application-leave";
 import UiIconButton from "../../../../shared/ui/UiIconButton.vue";
 import { useSpaceStore } from "../../session/space-store";
@@ -23,6 +24,7 @@ const store = useSpaceStore();
 const route = useRoute();
 const { activeTabId, closedTabs, permanentTabId, surface } = storeToRefs(store);
 const { locale, t } = useI18n();
+const direction = computed(() => localeDirection(locale.value));
 const tabViews = useWorkbenchTabViews();
 const tabsViewport = useTemplateRef<HTMLDivElement>("tabsViewport");
 
@@ -93,6 +95,7 @@ watchEffect(() => {
     <SpaceLibraryToolbar v-if="surface.kind === 'library'" @create="createSpace" />
     <TabsRoot
       v-else
+      :dir="direction"
       activation-mode="manual"
       :model-value="activeTabId ?? ''"
       class="min-w-0 flex-1"
@@ -100,9 +103,14 @@ watchEffect(() => {
     >
       <div
         ref="tabsViewport"
+        :dir="direction"
         class="flex scrollbar-none items-center gap-1 overflow-x-auto py-1 [&::-webkit-scrollbar]:hidden"
       >
-        <TabsList :aria-label="t('spaces.space.tabs.label')" class="flex w-max shrink-0 items-center gap-1">
+        <TabsList
+          :dir="direction"
+          :aria-label="t('spaces.space.tabs.label')"
+          class="flex w-max shrink-0 items-center gap-1"
+        >
           <SpaceWorkbenchTab
             v-for="view in tabViews"
             :key="view.id"

@@ -10,6 +10,7 @@ import WorkspaceNavigationControls from "./WorkspaceNavigationControls.vue";
 
 const props = defineProps<{
   workspace: WorkspaceDefinition;
+  direction: "ltr" | "rtl";
   sidebarPinned: boolean;
   rightSidebarOpen: boolean;
   edges: WorkspaceEdges;
@@ -36,26 +37,32 @@ const emit = defineEmits<{
 <template>
   <header
     class="@container relative h-(--knovum-titlebar-height) shrink-0 material-toolbar [container-name:workspace-toolbar]"
+    :dir="direction"
   >
     <div data-tauri-drag-region class="absolute inset-0" />
     <div
       class="workspace-toolbar-content relative grid h-full"
       :style="{ gridTemplateColumns: toolbarColumns }"
     >
-      <div class="flex min-w-max items-center gap-1 pr-2 pl-(--knovum-titlebar-navigation-padding-start)">
+      <div
+        class="flex min-w-max items-center gap-1 pe-2"
+        :class="direction === 'ltr' ? 'ps-(--knovum-titlebar-navigation-padding-start)' : 'ps-2'"
+      >
         <WorkspaceNavigationControls
           :sidebar-pinned="sidebarPinned"
+          :direction="direction"
           @toggle-sidebar="emit('toggle-sidebar')"
           @preview-sidebar="emit('preview-sidebar')"
           @cancel-sidebar-preview="emit('cancel-sidebar-preview')"
         />
-        <component :is="workspace.toolbarLeading" class="ml-auto shrink-0" />
+        <component :is="workspace.toolbarLeading" class="ms-auto shrink-0" />
       </div>
-      <div class="flex min-w-0 items-center pr-2">
+      <div class="flex min-w-0 items-center pe-2">
         <component :is="workspace.toolbar" class="min-w-0 flex-1" />
       </div>
       <div
-        class="z-10 col-start-3 row-start-1 flex min-w-max items-center gap-1 self-center justify-self-end pr-3"
+        class="z-10 col-start-3 row-start-1 flex min-w-max items-center gap-1 self-center justify-self-end"
+        :class="direction === 'rtl' ? 'pe-(--knovum-titlebar-navigation-padding-start)' : 'pe-3'"
       >
         <TaskCenter :current-scope="workspace.currentScope?.value" />
         <UiIconButton
@@ -68,7 +75,11 @@ const emit = defineEmits<{
           size="md"
           @click="emit('toggle-right-sidebar')"
         >
-          <UiPanelToggleIcon class="size-4.5" side="right" :open="rightSidebarOpen" />
+          <UiPanelToggleIcon
+            class="size-4.5"
+            :side="direction === 'rtl' ? 'left' : 'right'"
+            :open="rightSidebarOpen"
+          />
         </UiIconButton>
       </div>
     </div>

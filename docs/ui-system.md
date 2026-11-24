@@ -266,6 +266,10 @@ shell and component enter/leave states; do not add a motion runtime for simple o
   against its own frame and the grid by a different sub-pixel amount every frame, which reads as the canvas
   shaking while it slides; at whole pixels every layer agrees. A CSS transition cannot be told to land on
   pixels, so geometry never animates through one;
+- workspace direction follows the active locale: leading means inline-start (right in Hebrew), trailing means
+  inline-end (left in Hebrew). Panel positions, sash pointer and keyboard resizing, tab order, and toolbar
+  alignment all use those logical edges. macOS traffic lights remain at the physical left window edge and
+  retain their toolbar clearance;
 - the canvas never reacts to panel motion: nothing inside a sidebar reflows or mounts during it (fixed-width
   content; the right pane only fades as it mounts), nothing compensates the canvas camera for the moving
   host, and the stage surface - every Konva raster, the grid and the culled region - is bounded by the
@@ -281,7 +285,7 @@ shell and component enter/leave states; do not add a motion runtime for simple o
   toggle's job, so a drag never removes the handle being dragged, which is the only way a divider can survive
   its own gesture. Keyboard resizing uses the same path. An n-panel percent solver is still the right tool
   where the layout genuinely is n panels, as in the video editing workbench;
-- the left sidebar has one surface for both of its roles. Its slot is only the layout width it reserves; the
+- the leading sidebar has one surface for both of its roles. Its slot is only the layout width it reserves; the
   surface is fixed at the sidebar's width and placed by transform at the sidebar's own edge. Pinning from a
   preview grows the slot while that edge stays put, so the sidebar holds still as the work area makes room;
   closing moves both by the same frame value, so the sidebar's edge stays on the canvas edge. Pinning never
@@ -374,15 +378,15 @@ One unified 40px toolbar spans the window above the workspace split. Its empty a
 interactive controls alone receive pointer input. A subtle highlight separates the chrome from the inset work area.
 Resizing the panes updates the corresponding toolbar regions from the splitter's actual layout without animation.
 
-The leading toolbar region shares the left navigation panel's width and keeps navigation and history controls in
+The leading toolbar region shares the leading navigation panel's width and keeps navigation and history controls in
 place when the sidebar is previewed. With the sidebar pinned, Space tabs align with the main work surface's
-leading edge. Leading and right chrome actions follow the established compact control size. The right pane's
+leading edge. Leading and trailing chrome actions follow the established compact control size. The trailing pane's
 view picker is part of its content header rather than the window toolbar.
 
-The canvas and right pane each own an inset, rounded surface with a border and the same bottom gutter. The
-right pane's view picker, content header, body and composer live inside that one surface. The window toolbar
-remains a separate native-chrome plane above both surfaces. During expansion, the pane reveals right-anchored
-content at its preferred width instead of compressing the content.
+The canvas and trailing pane each own an inset, rounded surface with a border and the same bottom gutter. The
+trailing pane's view picker, content header, body and composer live inside that one surface. The window toolbar
+remains a separate native-chrome plane above both surfaces. During expansion, the pane reveals
+inline-start-anchored content at its preferred width instead of compressing the content.
 
 The Spaces sidebar uses a consistent 224px default width in both pinned and transient-preview states. A
 pinned sidebar remains resizable between 200px and 320px. Its resize feedback is painted on the workspace

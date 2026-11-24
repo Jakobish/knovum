@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { computed, provide, toRef } from "vue";
+import { useI18n } from "vue-i18n";
 import { RouterView, useRoute } from "vue-router";
 
+import { localeDirection } from "../foundation/i18n/instance";
 import { overlayScopeVisibleKey } from "../shared/contracts/overlay-scope-visibility";
 import type { WorkspaceDefinition } from "../shared/contracts/workspace-definition";
 import CommandPalette from "./commands/CommandPalette.vue";
@@ -14,8 +16,10 @@ import { useShellController } from "./use-shell-controller";
 
 const props = defineProps<{ workspace: WorkspaceDefinition; workspaceActive: boolean }>();
 const emit = defineEmits<{ openSettings: [pane?: string] }>();
+const { locale } = useI18n();
 const route = useRoute();
 const workspaceActive = toRef(props, "workspaceActive");
+const direction = computed(() => localeDirection(locale.value));
 const {
   commandOpen,
   shortcutsOpen,
@@ -67,6 +71,7 @@ const edges = useWorkspaceEdges({
   >
     <WorkspaceToolbar
       :workspace="workspace"
+      :direction="direction"
       :sidebar-pinned="sidebarPinned"
       :right-sidebar-open="rightSidebarOpen"
       :edges="edges"
@@ -77,6 +82,7 @@ const edges = useWorkspaceEdges({
     />
     <WorkspaceLayout
       :workspace="workspace"
+      :direction="direction"
       :sidebar-pinned="sidebarPinned"
       :sidebar-width="sidebarWidth"
       :sidebar-preview="sidebarPreview"

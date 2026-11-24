@@ -16,8 +16,9 @@ interface SidebarResizeGeometry {
 }
 
 interface SidebarResizeOptions {
-  /** A leading sidebar grows as the pointer moves right, a trailing one as it moves left. */
+  /** Growth follows logical edges: leading grows toward inline-end, trailing toward inline-start. */
   edge: "leading" | "trailing";
+  direction(): "ltr" | "rtl";
   geometry: SidebarResizeGeometry;
   width(): number;
   onResize(value: number): void;
@@ -46,9 +47,14 @@ function keyboardWidth(key: string, width: number, geometry: SidebarResizeGeomet
 
 export function useSidebarResize(options: SidebarResizeOptions) {
   const dragging = shallowRef(false);
-  const grow = options.edge === "leading" ? 1 : -1;
+  const logicalGrow = options.edge === "leading" ? 1 : -1;
+  let gestureGrow = logicalGrow;
   let originX = 0;
   let originWidth = 0;
+
+  function growDirection() {
+    return logicalGrow * (options.direction() === "rtl" ? -1 : 1);
+  }
 
   function begin(event: PointerEvent) {
     if (event.button !== 0 || !(event.currentTarget instanceof HTMLElement)) return;
@@ -56,13 +62,14 @@ export function useSidebarResize(options: SidebarResizeOptions) {
     event.currentTarget.setPointerCapture(event.pointerId);
     originX = event.clientX;
     originWidth = options.width();
+    gestureGrow = growDirection();
     dragging.value = true;
     setDocumentDragging(true);
   }
 
   function move(event: PointerEvent) {
     if (!dragging.value) return;
-    options.onResize(clampWidth(originWidth + (event.clientX - originX) * grow, options.geometry));
+    options.onResize(clampWidth(originWidth + (event.clientX - originX) * gestureGrow, options.geometry));
   }
 
   function end() {
@@ -79,7 +86,7 @@ export function useSidebarResize(options: SidebarResizeOptions) {
   }
 
   function keydown(event: KeyboardEvent) {
-    const next = keyboardWidth(event.key, options.width(), options.geometry, grow);
+    const next = keyboardWidth(event.key, options.width(), options.geometry, growDirection());
     if (next === undefined) return;
     event.preventDefault();
     options.onResize(clampWidth(next, options.geometry));

@@ -10,7 +10,7 @@ defineProps<{ workspace: WorkspaceDefinition }>();
     edge as the slot opens and never reflows its content while it does.
   -->
   <div
-    class="absolute inset-y-0 left-0 w-(--workspace-right-sidebar-width) pr-(--knovum-workspace-gutter) pb-(--knovum-workspace-gutter)"
+    class="absolute inset-y-0 start-0 w-(--workspace-right-sidebar-width) pe-(--knovum-workspace-gutter) pb-(--knovum-workspace-gutter)"
   >
     <div
       class="relative h-full min-h-0 w-full overflow-hidden rounded-xl border border-(--knovum-window-border-color) bg-surface-panel shadow-workspace select-none"

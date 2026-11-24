@@ -14,10 +14,11 @@ const workspace = {
   rightSidebarAvailable: computed(() => true),
 } as unknown as WorkspaceDefinition;
 
-function mountToolbar(sidebarPinned: boolean, trailing = 0) {
+function mountToolbar(sidebarPinned: boolean, trailing = 0, direction: "ltr" | "rtl" = "ltr") {
   return mount(WorkspaceToolbar, {
     props: {
       workspace,
+      direction,
       sidebarPinned,
       rightSidebarOpen: trailing > 0,
       edges: { leading: sidebarPinned ? 240 : 0, sidebar: sidebarPinned ? 240 : 0, trailing },
@@ -74,6 +75,16 @@ describe("workspace toolbar alignment", () => {
   it("reserves the trailing column the right pane occupies", () => {
     const wrapper = mountToolbar(true, 320);
 
+    expect(columns(wrapper)).toBe(
+      "minmax(auto, max(var(--knovum-workspace-gutter), 240px)) minmax(0, 1fr) 320px",
+    );
+    wrapper.unmount();
+  });
+
+  it("sets the toolbar's text direction so logical columns and controls mirror in RTL", () => {
+    const wrapper = mountToolbar(true, 320, "rtl");
+
+    expect(wrapper.get("header").attributes("dir")).toBe("rtl");
     expect(columns(wrapper)).toBe(
       "minmax(auto, max(var(--knovum-workspace-gutter), 240px)) minmax(0, 1fr) 320px",
     );

@@ -10,7 +10,7 @@ import {
   preferenceDefaults,
   preferencesSchemaVersion,
 } from "../../shared/contracts/generated/contract-values";
-import { i18n, systemLocale, type AppLocale } from "../i18n/instance";
+import { i18n, localeDirection, systemLocale, type AppLocale } from "../i18n/instance";
 import { invokeCommand } from "../ipc/invoke-command";
 import { isApplicationTransitioning } from "../lifecycle/application-transition";
 import {
@@ -55,8 +55,6 @@ async function syncSystemLocale(locale: LocalePreference): Promise<void> {
   await invokeCommand("plugin:desktop|set_locale", { locale: activeLocale(locale) });
 }
 
-const RTL_LOCALES = new Set<AppLocale>(["he"]);
-
 function applyPreferences(state: Preferences): void {
   const root = document.documentElement;
   const locale = activeLocale(state.locale);
@@ -64,7 +62,7 @@ function applyPreferences(state: Preferences): void {
   root.dataset.density = state.density;
   root.dataset.textSize = state.textSize;
   root.lang = locale;
-  root.dir = RTL_LOCALES.has(locale) ? "rtl" : "ltr";
+  root.dir = localeDirection(locale);
   i18n.global.locale.value = locale;
 }
 

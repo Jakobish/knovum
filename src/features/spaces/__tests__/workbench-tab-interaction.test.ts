@@ -159,3 +159,17 @@ it("localizes the Inbox tab title dynamically according to the active locale", a
   await flushPromises();
   expect(inboxLabel.text()).toBe("Inbox");
 });
+
+it("renders the workbench tab strip with RTL direction and logical-start labels", async () => {
+  const previousLocale = i18n.global.locale.value;
+  onTestFinished(() => {
+    i18n.global.locale.value = previousLocale;
+  });
+  i18n.global.locale.value = "he";
+  await openWorkbenchWithDocuments();
+  const wrapper = mountWorkbenchStrip();
+  await flushPromises();
+
+  expect(wrapper.get('[role="tablist"]').attributes("dir")).toBe("rtl");
+  expect(wrapper.get('[role="tab"]').classes()).toContain("text-start");
+});

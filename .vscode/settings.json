@@ -40,6 +40,10 @@
     "**/.jj": true,
     "**/.DS_Store": true,
     "**/Thumbs.db": true,
+    "**/__pycache__": true,
+    "**/__tests__": true,
+    "**/.pytest_cache": true,
+    "**/.mypy_cache": true,
     "**/.mdocfiles": true
   }
 }

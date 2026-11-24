@@ -22,13 +22,13 @@ const ICONS = { space: LayoutDashboard, document: FileText, video: Film };
   >
     <TabsTrigger
       :value="props.view.id"
-      class="flex h-full min-w-0 flex-1 items-center gap-1.5 px-3 text-left outline-none"
+      class="flex h-full min-w-0 flex-1 items-center gap-1.5 px-3 text-start outline-none"
     >
       <component :is="ICONS[props.view.kind]" class="size-3.5 shrink-0" :stroke-width="1.6" />
       <span class="truncate">{{ props.view.title }}</span>
     </TabsTrigger>
     <!-- The close button keeps a reserved slot, so the label never re-truncates on hover. -->
-    <div class="relative mr-1.5 size-4 shrink-0">
+    <div class="relative me-1.5 size-4 shrink-0">
       <button
         v-if="props.view.canClose"
         type="button"

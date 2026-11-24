@@ -12,6 +12,7 @@ import WorkspaceSidebarSash from "./WorkspaceSidebarSash.vue";
 
 const props = defineProps<{
   workspace: WorkspaceDefinition;
+  direction: "ltr" | "rtl";
   sidebarPinned: boolean;
   sidebarWidth: number;
   sidebarPreview: boolean;
@@ -45,6 +46,7 @@ function schedulePreviewClose() {
 <template>
   <div
     class="relative flex min-h-0 min-w-0 flex-1 overflow-hidden"
+    :dir="direction"
     :style="{
       '--workspace-sidebar-width': `${sidebarWidth}px`,
       '--workspace-right-sidebar-width': `${rightSidebarWidth}px`,
@@ -61,8 +63,10 @@ function schedulePreviewClose() {
     <div
       id="spaces-sidebar"
       class="workspace-sidebar-surface"
-      :class="{ 'is-floating': sidebarFloating, 'rounded-r-xl': !sidebarPinned }"
-      :style="{ transform: `translate3d(${edges.sidebar - sidebarWidth}px, 0, 0)` }"
+      :class="{ 'is-floating': sidebarFloating, 'rounded-e-xl': !sidebarPinned }"
+      :style="{
+        transform: `translate3d(${(edges.sidebar - sidebarWidth) * (direction === 'rtl' ? -1 : 1)}px, 0, 0)`,
+      }"
       :aria-hidden="!sidebarVisible"
       :inert="!sidebarVisible"
       @pointerenter="openPreview"
@@ -77,6 +81,7 @@ function schedulePreviewClose() {
     <WorkspaceSidebarSash
       v-if="sidebarPinned"
       edge="leading"
+      :direction="direction"
       controls="spaces-sidebar"
       :label="t('shell.layout.resizeSidebar')"
       :width="sidebarWidth"
@@ -86,7 +91,7 @@ function schedulePreviewClose() {
     />
 
     <main
-      class="min-h-0 min-w-0 flex-1 pr-(--knovum-workspace-gutter) pb-(--knovum-workspace-gutter) select-text"
+      class="min-h-0 min-w-0 flex-1 pe-(--knovum-workspace-gutter) pb-(--knovum-workspace-gutter) select-text"
     >
       <div
         class="relative h-full min-h-0 overflow-hidden rounded-xl border border-(--knovum-window-border-color) bg-surface-canvas shadow-workspace"
@@ -100,6 +105,7 @@ function schedulePreviewClose() {
     <WorkspaceSidebarSash
       v-if="rightSidebarOpen"
       edge="trailing"
+      :direction="direction"
       controls="spaces-right-sidebar"
       :label="t('shell.layout.resizeRightSidebar')"
       :width="rightSidebarWidth"
@@ -121,7 +127,7 @@ function schedulePreviewClose() {
 
     <div
       v-if="!sidebarVisible"
-      class="absolute inset-y-0 left-0 z-50 w-3"
+      class="absolute inset-y-0 start-0 z-50 w-3"
       @pointerenter="openPreview"
       @pointermove="openPreview"
       @pointerleave="schedulePreviewClose"

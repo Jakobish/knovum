@@ -18,15 +18,19 @@ function restingEdges(pinned: boolean, visible: boolean, rightOpen: boolean) {
   return { leading: pinned ? 280 : 0, sidebar: visible ? 280 : 0, trailing: rightOpen ? 320 : 0 };
 }
 
-function mountLayout(props: {
-  sidebarPinned: boolean;
-  sidebarPreview?: boolean;
-  rightSidebarOpen?: boolean;
-}) {
+function mountLayout(
+  props: {
+    sidebarPinned: boolean;
+    sidebarPreview?: boolean;
+    rightSidebarOpen?: boolean;
+  },
+  direction: "ltr" | "rtl" = "ltr",
+) {
   const preview = props.sidebarPreview ?? false;
   return mount(WorkspaceLayout, {
     props: {
       workspace,
+      direction,
       sidebarPinned: props.sidebarPinned,
       sidebarWidth: 280,
       sidebarPreview: preview,
@@ -96,6 +100,23 @@ describe("workspace layout", () => {
       "translate3d(-149px, 0, 0)",
     );
     expect((wrapper.get("#spaces-right-sidebar").element as HTMLElement).style.width).toBe("47px");
+    wrapper.unmount();
+  });
+
+  it("mirrors the leading sidebar's open and closed motion in RTL", async () => {
+    const wrapper = mountLayout({ sidebarPinned: true }, "rtl");
+    const surface = wrapper.get("#spaces-sidebar");
+    expect(wrapper.get(".relative.flex.min-h-0").attributes("dir")).toBe("rtl");
+    expect((surface.element as HTMLElement).style.transform).toBe("translate3d(0px, 0, 0)");
+
+    await wrapper.setProps({
+      sidebarPinned: false,
+      edges: { leading: 0, sidebar: 140, trailing: 0 },
+    });
+    expect((surface.element as HTMLElement).style.transform).toBe("translate3d(140px, 0, 0)");
+
+    await wrapper.setProps({ sidebarPreview: false, edges: { leading: 0, sidebar: 0, trailing: 0 } });
+    expect((surface.element as HTMLElement).style.transform).toBe("translate3d(280px, 0, 0)");
     wrapper.unmount();
   });
 

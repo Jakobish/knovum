@@ -5,10 +5,11 @@ import { useSidebarResize } from "../use-sidebar-resize";
 
 const geometry = { minSize: 200, maxSize: 320 };
 
-function createSash(edge: "leading" | "trailing", startWidth = 240) {
+function createSash(edge: "leading" | "trailing", startWidth = 240, direction: "ltr" | "rtl" = "ltr") {
   const state = { commits: 0, width: startWidth };
   const sash = useSidebarResize({
     edge,
+    direction: () => direction,
     geometry,
     width: () => state.width,
     onResize: (value) => (state.width = value),
@@ -147,6 +148,24 @@ describe("sidebar sash gesture", () => {
     sash.keydown(new KeyboardEvent("keydown", { key: "ArrowLeft" }));
 
     expect(state.width).toBe(256);
+  });
+
+  it("resizes leading and trailing sidebars toward their logical open edges in RTL", () => {
+    const leading = createSash("leading", 240, "rtl");
+    leading.sash.begin(pointer(500).event);
+    leading.sash.move(pointer(480).event);
+    expect(leading.state.width).toBe(260);
+    leading.sash.keydown(new KeyboardEvent("keydown", { key: "ArrowLeft" }));
+    expect(leading.state.width).toBe(276);
+    leading.sash.end();
+
+    const trailing = createSash("trailing", 240, "rtl");
+    trailing.sash.begin(pointer(500).event);
+    trailing.sash.move(pointer(520).event);
+    expect(trailing.state.width).toBe(260);
+    trailing.sash.keydown(new KeyboardEvent("keydown", { key: "ArrowRight" }));
+    expect(trailing.state.width).toBe(276);
+    trailing.sash.end();
   });
 
   it("leaves unrelated keys to the application", () => {

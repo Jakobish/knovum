@@ -1,32 +1,11 @@
-<div align="center">
-  <a href="https://github.com/madebyzan/knovum/releases/latest">
-    <img src="docs/assets/readme/banner.png" width="100%" alt="Knovum — a local-first AI knowledge workspace" />
-  </a>
+<img src="docs/assets/readme/banner.png" alt="Knovum — a local-first AI knowledge workspace" width="100" />**Bring your knowledge together. Make it useful.** \
+A local-first AI workspace for research, learning, and creation.
 
-  <p>
-    <strong>Bring your knowledge together. Make it useful.</strong>
-    <br />
-    A local-first AI workspace for research, learning, and creation.
-  </p>
+![Latest release](https://img.shields.io/github/v/release/madebyzan/knovum?label=download&color=2563eb)![Quality CI](https://github.com/madebyzan/knovum/actions/workflows/quality.yml/badge.svg)![GitHub stars](https://img.shields.io/github/stars/madebyzan/knovum?style=flat&color=f5b301)![macOS 14 or later, Apple Silicon and Intel](https://img.shields.io/badge/macOS-14%2B-111111?logo=apple&logoColor=white)
 
-  <p>
-    <a href="https://github.com/madebyzan/knovum/releases/latest"><img src="https://img.shields.io/github/v/release/madebyzan/knovum?label=download&color=2563eb" alt="Latest release" /></a>
-    <a href="https://github.com/madebyzan/knovum/actions/workflows/quality.yml"><img src="https://github.com/madebyzan/knovum/actions/workflows/quality.yml/badge.svg" alt="Quality CI" /></a>
-    <a href="https://github.com/madebyzan/knovum/stargazers"><img src="https://img.shields.io/github/stars/madebyzan/knovum?style=flat&color=f5b301" alt="GitHub stars" /></a>
-    <img src="https://img.shields.io/badge/macOS-14%2B-111111?logo=apple&logoColor=white" alt="macOS 14 or later, Apple Silicon and Intel" />
-    <img src="https://img.shields.io/badge/Windows-10%202004%2B-0078D6?logo=windows&logoColor=white" alt="Windows 10 version 2004 or later, x64" />
-    <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-16a34a" alt="License: MIT" /></a>
-  </p>
+![Windows 10 version 2004 or later, x64](https://img.shields.io/badge/Windows-10%202004%2B-0078D6?logo=windows&logoColor=white)
 
-  <p>
-    <a href="https://github.com/madebyzan/knovum/releases/latest"><strong>Download Knovum</strong></a> ·
-    <a href="#what-you-can-do">What you can do</a> ·
-    <a href="#local-first-by-design">Privacy</a> ·
-    <a href="#faq">FAQ</a> ·
-    <a href="#build-from-source">Build from source</a> ·
-    <a href="README.zh-CN.md">简体中文</a>
-  </p>
-</div>
+![License: MIT](https://img.shields.io/badge/license-MIT-16a34a)[**Download Knovum**](https://github.com/madebyzan/knovum/releases/latest) · [What you can do](#what-you-can-do) · [Privacy](#local-first-by-design) · [FAQ](#faq) · [Build from source](#build-from-source) · [简体中文](README.zh-CN.md)
 
 ## What is Knovum?
 
@@ -38,9 +17,7 @@ Turn the material you have collected into documents and media without losing the
 
 Your library lives on your machine. There is no Knovum account or Knovum cloud. Search, transcription, OCR, and other supported AI capabilities can run locally; when you choose a cloud model for an answer or generation task, Knovum sends only the context needed for that task to the provider you selected.
 
-<img src="docs/assets/readme/screenshot.png" width="100%" alt="Knovum desktop app showing sources, claims, evidence and a brief connected on an infinite canvas, alongside an answer with source citations." />
-
-## What you can do
+![Knovum desktop app showing sources, claims, evidence and a brief connected on an infinite canvas, alongside an answer with source citations.](docs/assets/readme/screenshot.png)## What you can do
 
 - **Bring everything into one place.** Collect notes, webpages, videos, recordings, PDFs, Office files, images, and code in a Space.
 - **See how ideas connect.** Arrange material on an infinite canvas, connect claims with evidence, and keep related questions and decisions close to their sources.
@@ -50,10 +27,7 @@ Your library lives on your machine. There is no Knovum account or Knovum cloud. 
 
 ## How it works
 
-<div align="center">
-  <img src="docs/assets/readme/source-to-work.png" width="100%" alt="A knowledge workflow: collect sources, connect ideas, ask questions, and create work you can trace back to its sources." />
-  <sub>From scattered sources to connected knowledge and work you can trace.</sub>
-</div>
+![A knowledge workflow: collect sources, connect ideas, ask questions, and create work you can trace back to its sources.](docs/assets/readme/source-to-work.png)From scattered sources to connected knowledge and work you can trace.
 
 1. **Collect.** Paste a link to save a webpage or a YouTube, Bilibili, TikTok, or Vimeo video. Add recordings, PDFs, Office files, images, code, and notes. Recordings can be transcribed locally with timestamps and speaker labels.
 2. **Organize.** Arrange material in sections and groups. Add claims, evidence, questions, and decisions as knowledge objects, then connect them with meaningful relationships.
@@ -80,7 +54,7 @@ Hybrid keyword and vector search runs on your machine using Qwen3 embeddings and
 
 ### Connect ideas into structured knowledge
 
-Use six built-in knowledge object types — **Concept, Question, Claim, Evidence, Experiment, and Decision** — or create your own. Connect them with relationships such as _supports_, _contradicts_, _answers_, _depends on_, _supersedes_, and _derives from_.
+Use six built-in knowledge object types — **Concept, Question, Claim, Evidence, Experiment, and Decision** — or create your own. Connect them with relationships such as *supports*, *contradicts*, *answers*, *depends on*, *supersedes*, and *derives from*.
 
 Knowledge checks can surface unsupported or contested claims, evidence without grounding, answered questions, and notes whose sources have changed. You can use as much or as little structure as your work needs.
 
@@ -126,13 +100,13 @@ You can also hand a task to a desktop Agent that brings its own credentials. Key
 
 ## Download and get started
 
-| Platform | Requirement                           | Installer                        |
-| -------- | ------------------------------------- | -------------------------------- |
-| macOS    | macOS 14 or later, Apple Silicon      | `Knovum_<version>_aarch64.dmg`   |
-| macOS    | macOS 14 or later, Intel              | `Knovum_<version>_x64.dmg`       |
-| Windows  | Windows 10 version 2004 or later, x64 | `Knovum_<version>_x64-setup.exe` |
+| Platform | Requirement | Installer |
+| --- | --- | --- |
+| macOS | macOS 14 or later, Apple Silicon | `Knovum_<version>_aarch64.dmg` |
+| macOS | macOS 14 or later, Intel | `Knovum_<version>_x64.dmg` |
+| Windows | Windows 10 version 2004 or later, x64 | `Knovum_<version>_x64-setup.exe` |
 
-**[Download the latest release](https://github.com/madebyzan/knovum/releases/latest)**
+[**Download the latest release**](https://github.com/madebyzan/knovum/releases/latest)
 
 Builds are not yet notarized by Apple or Authenticode-signed, so macOS and Windows ask you to confirm the first launch. Updates after that are delivered in the app and verified against the release signature. Linux and Windows on ARM are not supported yet.
 
@@ -141,68 +115,59 @@ Builds are not yet notarized by Apple or Authenticode-signed, so macOS and Windo
 ## FAQ
 
 <details>
-<summary><strong>Does Knovum work offline?</strong></summary>
+<summary>Does Knovum work offline?</summary>
 
 Yes. Editing, organizing, keyword and semantic search, transcription, speaker recognition, OCR, speech synthesis, and the listed image tools run on your machine once their models are downloaded. Only actions you send to a cloud model need an internet connection.
 
 </details>
 
 <details>
-<summary><strong>Where is my data stored? Does anything get uploaded?</strong></summary>
+<summary>Where is my data stored? Does anything get uploaded?</summary>
 
 Your library is stored in local application data: SQLite keeps the structure, LanceDB stores the semantic index, and managed files store assets. A separate local database stores secrets. Content is not uploaded to a Knovum cloud. When you ask a cloud model to perform an action, only the context needed for that action is sent to the provider you selected.
 
 </details>
 
 <details>
-<summary><strong>Do I need an AI account to use Knovum?</strong></summary>
+<summary>Do I need an AI account to use Knovum?</summary>
 
 No account is needed to use Knovum or its local editing, organization, search, transcription, OCR, and other listed on-device capabilities. AI answers and generation require a model connection, which can be a cloud provider or a compatible local endpoint.
 
 </details>
 
 <details>
-<summary><strong>How is Knovum different from NotebookLM, Obsidian Canvas, or Heptabase?</strong></summary>
+<summary>How is Knovum different from NotebookLM, Obsidian Canvas, or Heptabase?</summary>
 
 Knovum brings source-grounded AI answers, a visual canvas for thinking, and structured knowledge into one local-first desktop workspace. It also works with audio and video, supports on-device AI capabilities, and keeps track of the sources and revisions behind generated results.
 
 </details>
 
 <details>
-<summary><strong>Can I use local models with Ollama?</strong></summary>
+<summary>Can I use local models with Ollama?</summary>
 
 Yes. Ollama and any OpenAI-compatible endpoint can be connected as a model for answers and the Builtin Agent. The on-device capabilities listed below do not need Ollama or another model server.
 
 </details>
 
 <details>
-<summary><strong>What should I do if local model downloads fail or time out?</strong></summary>
+<summary>What should I do if local model downloads fail or time out?</summary>
 
-On-device capabilities such as OCR, Whisper transcription, and image processing download their model weights on first use. If your network has restricted access to `huggingface.co`, configure the standard `HF_ENDPOINT` environment variable to use a mirror, for example `https://hf-mirror.com`.
-
-- **Windows:** Set a persistent user environment variable. Press `Win + R`, enter `sysdm.cpl`, then open **Advanced → Environment Variables**. Add `HF_ENDPOINT` with the value `https://hf-mirror.com`. Alternatively, run `setx HF_ENDPOINT "https://hf-mirror.com"` in Command Prompt and restart Knovum.
-- **macOS / Linux:** Add the following to your shell configuration, such as `~/.zshrc` or `~/.bashrc`:
-
-```bash
-echo 'export HF_ENDPOINT="https://hf-mirror.com"' >> ~/.zshrc
-source ~/.zshrc
-```
-
-Downloaded model files are verified against pinned SHA-256 digests.
+On-device capabilities such as OCR, Whisper transcription, and image processing download their model weights on first use. If your network has restricted access to huggingface.co, configure the standard HF_ENDPOINT environment variable to use a mirror, for example https://hf-mirror.com.Windows: Set a persistent user environment variable. Press Win + R, enter sysdm.cpl, then open Advanced → Environment Variables. Add HF_ENDPOINT with the value https://hf-mirror.com. Alternatively, run setx HF_ENDPOINT "https://hf-mirror.com" in Command Prompt and restart Knovum.macOS / Linux: Add the following to your shell configuration, such as ~/.zshrc or ~/.bashrc:echo 'export HF_ENDPOINT="https://hf-mirror.com"' >> ~/.zshrc
+source ~/.zshrcDownloaded model files are verified against pinned SHA-256 digests.
 
 </details>
 
 <details>
-<summary><strong>Can I bring in my existing notes and canvases?</strong></summary>
+<summary>Can I bring in my existing notes and canvases?</summary>
 
-Import Markdown, documents, and media files directly. Import and export canvases through the open JSON Canvas format (`.canvas`). A complete Space can also be exported as a portable `.knovumspace` package.
+Import Markdown, documents, and media files directly. Import and export canvases through the open JSON Canvas format (.canvas). A complete Space can also be exported as a portable .knovumspace package.
 
 </details>
 
 <details>
-<summary><strong>Is Knovum open source and free?</strong></summary>
+<summary>Is Knovum open source and free?</summary>
 
-Yes. Knovum is free and open-source software under the [MIT License](LICENSE). You can use, read, build, modify, and distribute it under the terms of the license.
+Yes. Knovum is free and open-source software under the MIT License. You can use, read, build, modify, and distribute it under the terms of the license.
 
 </details>
 
@@ -210,26 +175,26 @@ Yes. Knovum is free and open-source software under the [MIT License](LICENSE). Y
 
 The following capabilities run locally. Models are downloaded on first use, verified against pinned SHA-256 digests, and can be removed from Settings.
 
-| Capability                               | Model                                                        | Runtime                 |
-| ---------------------------------------- | ------------------------------------------------------------ | ----------------------- |
-| Speech transcription                     | Whisper (default) / Qwen3-ASR 1.7B + Silero VAD              | whisper.cpp / audio.cpp |
-| Speaker diarization                      | Pyannote 3.0 + ERes2Net                                      | sherpa-onnx             |
-| Vocal / accompaniment separation         | HTDemucs                                                     | audio.cpp               |
-| Speech synthesis, voice cloning & design | MOSS-TTS-Nano, VoxCPM2, IndexTTS2, Qwen3-TTS, Fun-CosyVoice3 | audio.cpp               |
-| Word-level transcript alignment          | Qwen3 Forced Aligner                                         | audio.cpp               |
-| Semantic-search embeddings               | Qwen3-Embedding-0.6B                                         | Candle                  |
-| Background removal                       | BiRefNet, BEN2, IS-Net Anime                                 | ONNX Runtime            |
-| Image upscaling                          | Real-ESRGAN                                                  | ONNX Runtime            |
-| Inpainting / repair                      | Big LaMa                                                     | ONNX Runtime            |
-| Smart selection                          | MobileSAM, SAM 2.1 Hiera-Tiny                                | ONNX Runtime            |
-| Relative depth                           | Depth Anything V2                                            | ONNX Runtime            |
-| Text recognition (scans, screenshots)    | PP-OCRv6 small                                               | ONNX Runtime            |
+| Capability | Model | Runtime |
+| --- | --- | --- |
+| Speech transcription | Whisper (default) / Qwen3-ASR 1.7B + Silero VAD | whisper.cpp / audio.cpp |
+| Speaker diarization | Pyannote 3.0 + ERes2Net | sherpa-onnx |
+| Vocal / accompaniment separation | HTDemucs | audio.cpp |
+| Speech synthesis, voice cloning & design | MOSS-TTS-Nano, VoxCPM2, IndexTTS2, Qwen3-TTS, Fun-CosyVoice3 | audio.cpp |
+| Word-level transcript alignment | Qwen3 Forced Aligner | audio.cpp |
+| Semantic-search embeddings | Qwen3-Embedding-0.6B | Candle |
+| Background removal | BiRefNet, BEN2, IS-Net Anime | ONNX Runtime |
+| Image upscaling | Real-ESRGAN | ONNX Runtime |
+| Inpainting / repair | Big LaMa | ONNX Runtime |
+| Smart selection | MobileSAM, SAM 2.1 Hiera-Tiny | ONNX Runtime |
+| Relative depth | Depth Anything V2 | ONNX Runtime |
+| Text recognition (scans, screenshots) | PP-OCRv6 small | ONNX Runtime |
 
 Embeddings and transcription use Metal on Apple Silicon. None of the capabilities above requires Ollama or another model server.
 
 ## Build from source
 
-You need **Node.js 22.13+** with **Corepack**, the Rust toolchain pinned in `rust-toolchain.toml`, and the native tooling used by the desktop build: **uv**, **CMake**, **Protobuf**, and **LLVM/libclang**. See [docs/installation.md](docs/installation.md) for exact versions.
+You need **Node.js 22.13+** with **Corepack**, the Rust toolchain pinned in `rust-toolchain.toml`, and the native tooling used by the desktop build: **uv**, **CMake**, **Protobuf**, and **LLVM/libclang**. See docs/installation.md for exact versions.
 
 ```bash
 git clone https://github.com/madebyzan/knovum.git
@@ -241,15 +206,15 @@ pnpm desktop:dev
 
 The first build compiles the native inference worker and takes longer; later starts are faster.
 
-| Command             | Purpose                                                               |
-| ------------------- | --------------------------------------------------------------------- |
-| `pnpm desktop:dev`  | Run the desktop app with the Agent environment prepared               |
-| `pnpm check`        | Full quality gate: web, Rust, and Python                              |
-| `pnpm check:web`    | Typecheck, oxlint, dependency-cruiser, Vitest, knip, jscpd, and oxfmt |
-| `pnpm check:rust`   | cargo fmt, clippy (`-D warnings`), and workspace tests                |
-| `pnpm check:python` | ruff, mypy (strict), and pytest for the Agent runtime                 |
-| `pnpm e2e`          | WebdriverIO end-to-end run against a debug build                      |
-| `pnpm package`      | Build desktop bundles for the current platform                        |
+| Command | Purpose |
+| --- | --- |
+| `pnpm desktop:dev` | Run the desktop app with the Agent environment prepared |
+| `pnpm check` | Full quality gate: web, Rust, and Python |
+| `pnpm check:web` | Typecheck, oxlint, dependency-cruiser, Vitest, knip, jscpd, and oxfmt |
+| `pnpm check:rust` | cargo fmt, clippy (`-D warnings`), and workspace tests |
+| `pnpm check:python` | ruff, mypy (strict), and pytest for the Agent runtime |
+| `pnpm e2e` | WebdriverIO end-to-end run against a debug build |
+| `pnpm package` | Build desktop bundles for the current platform |
 
 CI runs these checks on macOS (Apple Silicon and Intel) and Windows. Pushing a `v*` tag builds the macOS and Windows packages into a draft GitHub Release.
 
@@ -259,7 +224,7 @@ A Rust core owns data, inference, and OS integration; a Vue 3 renderer owns inte
 
 **Tauri 2 · Rust · Vue 3 · TypeScript · SQLite (sqlx) · LanceDB · Candle · ONNX Runtime · whisper.cpp · Konva · Tailwind CSS v4**
 
-Read more in [docs/system-architecture.md](docs/system-architecture.md), the [documentation map](docs/README.md), and the product design contract in [DESIGN.md](DESIGN.md).
+Read more in docs/system-architecture.md, the documentation map, and the product design contract in [DESIGN.md](DESIGN.md).
 
 ## Contributing
 
@@ -275,9 +240,4 @@ Knovum is released under the [MIT License](LICENSE). Third-party components reta
 
 ## Star history
 
-<a href="https://star-history.com/#madebyzan/knovum&Date">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=madebyzan/knovum&type=Date&theme=dark" />
-    <img alt="Star history for madebyzan/knovum" src="https://api.star-history.com/svg?repos=madebyzan/knovum&type=Date" />
-  </picture>
-</a>
+![Star history for madebyzan/knovum](https://api.star-history.com/svg?repos=madebyzan/knovum&type=Date)

@@ -17,7 +17,7 @@ const { show: showSpaceMenu } = useSpaceContextMenu();
 const { spaces, activeSpaceId, surface, libraryScope } = storeToRefs(store);
 const { t } = useI18n();
 const ROW_CLASS =
-  "flex h-interaction w-full items-center gap-2 rounded-md px-2 text-left text-label text-fg-secondary hover:bg-(--knovum-sidebar-item-bg-hover) hover:text-fg-primary data-[active=true]:bg-(--knovum-sidebar-item-bg-selected) data-[active=true]:text-fg-primary";
+  "flex h-interaction w-full items-center gap-2 rounded-md px-2 text-start text-label text-fg-secondary hover:bg-(--knovum-sidebar-item-bg-hover) hover:text-fg-primary data-[active=true]:bg-(--knovum-sidebar-item-bg-selected) data-[active=true]:text-fg-primary";
 const inbox = computed(() => spaces.value.find((space) => space.kind === "inbox"));
 function navigate(operation: () => Promise<void>) {
   void operation().catch((error: unknown) => {

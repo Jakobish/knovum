@@ -3,9 +3,15 @@ import { createI18n } from "vue-i18n";
 import { localeMessages } from "./locales/locale-registry";
 
 export type AppLocale = keyof typeof localeMessages;
+export type LocaleDirection = "ltr" | "rtl";
 
 const locales = Object.keys(localeMessages);
 const russianPlurals = new Intl.PluralRules("ru");
+const RTL_LOCALES = new Set(["he"]);
+
+export function localeDirection(locale: string): LocaleDirection {
+  return RTL_LOCALES.has(locale) ? "rtl" : "ltr";
+}
 
 const COMPACT_NUMBER_FORMAT = { notation: "compact", maximumFractionDigits: 1 } as const;
 const DATE_TIME_FORMATS = {

@@ -22,6 +22,7 @@ vi.mock("@tauri-apps/api/window", () => ({
 vi.mock("../../ipc/invoke-command", () => ({ invokeCommand: async () => {} }));
 vi.mock("../../i18n/instance", () => ({
   i18n: { global: { locale: { value: "en" } } },
+  localeDirection: (locale: string) => (locale === "he" ? "rtl" : "ltr"),
   systemLocale: () => "en",
 }));
 const disk = { get: async () => undefined, set: calls.set, save: calls.save };
@@ -97,6 +98,15 @@ it("rejects exit while dirty preferences still cannot be persisted", async () =>
 it("does not overwrite unloaded preferences", async () => {
   await usePreferencesStore().flush();
   expect(calls.set).not.toHaveBeenCalled();
+});
+
+it("applies the selected locale's text direction to the document", async () => {
+  const store = usePreferencesStore();
+  await store.load();
+  await store.setLocale("he");
+
+  expect(document.documentElement.lang).toBe("he");
+  expect(document.documentElement.dir).toBe("rtl");
 });
 
 it("loads absent optional preferences without rewriting disk and saves a complete value on edit", async () => {

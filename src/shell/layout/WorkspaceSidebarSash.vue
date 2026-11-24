@@ -3,6 +3,7 @@ import { useSidebarResize } from "./use-sidebar-resize";
 
 const props = defineProps<{
   edge: "leading" | "trailing";
+  direction: "ltr" | "rtl";
   controls: string;
   label: string;
   width: number;
@@ -11,6 +12,7 @@ const props = defineProps<{
 const emit = defineEmits<{ resize: [value: number]; commit: [] }>();
 const { begin, dragging, end, keydown, move } = useSidebarResize({
   edge: props.edge,
+  direction: () => props.direction,
   geometry: props.geometry,
   width: () => props.width,
   onResize: (value) => emit("resize", value),
@@ -39,8 +41,8 @@ const { begin, dragging, end, keydown, move } = useSidebarResize({
     @keydown="keydown"
   >
     <span
-      class="absolute inset-y-0 flex w-5 cursor-col-resize touch-none justify-center"
-      :class="edge === 'trailing' ? '-left-3.5' : '-left-2.5'"
+      class="workspace-sash-hit-area absolute inset-y-0 flex w-5 cursor-col-resize touch-none justify-center"
+      :style="{ '--workspace-sash-hit-offset': edge === 'trailing' ? '-0.875rem' : '-0.625rem' }"
       @pointerdown="begin"
       @pointermove="move"
       @pointerup="end"
@@ -53,6 +55,10 @@ const { begin, dragging, end, keydown, move } = useSidebarResize({
 </template>
 
 <style scoped>
+.workspace-sash-hit-area {
+  inset-inline-start: var(--workspace-sash-hit-offset);
+}
+
 .workspace-sash-line {
   background-color: transparent;
   transition: background-color 100ms var(--ease-standard);

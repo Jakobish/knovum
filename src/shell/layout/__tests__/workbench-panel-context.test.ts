@@ -39,6 +39,7 @@ it("hides unavailable panel controls while retaining the user's requested layout
         return () =>
           h(WorkspaceToolbar, {
             workspace,
+            direction: "ltr",
             sidebarPinned: true,
             rightSidebarOpen: controller.rightSidebarOpen.value,
             edges: { leading: 260, sidebar: 260, trailing: controller.rightSidebarOpen.value ? 380 : 0 },
